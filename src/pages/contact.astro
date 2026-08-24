@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config/site";
+import PageHero from "../components/PageHero.astro";
+import ContactForm from "../components/ContactForm.astro";
+
+const mapQuery = encodeURIComponent(
+  `${site.address.street} ${site.address.city} ${site.address.state} ${site.address.zip}`
+);
+---
+<Layout title="Contact" description={`Contact T&T Lawn & Landscape in Charleston, SC. Call ${site.phone} or request a free, no-pressure quote online.`}>
+  <PageHero
+    title="Let's get your project started"
+    subtitle="Reliable, professional lawn care and landscaping in Charleston, SC. Reach out for a free, no-pressure quote."
+    breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+  />
+
+  <section class="bg-cream">
+    <div class="container-tt grid gap-12 py-20 lg:grid-cols-[1fr_20rem]">
+      <ContactForm />
+
+      <aside class="space-y-8">
+        <div>
+          <h2 class="font-display text-xl font-semibold text-oak">Contact us</h2>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-turf">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5a2 2 0 012-2h2.6a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.5 1.2L8.2 9.6a12 12 0 006.2 6.2l1.12-1.85a1 1 0 011.2-.5l3.6 1.2a1 1 0 01.68.95V18a2 2 0 01-2 2A16 16 0 013 5z"/></svg>
+              </span>
+              <a href={site.phoneHref} class="font-semibold text-oak hover:text-turf">{site.phone}</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-turf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <a href={`mailto:${site.email}`} class="text-loam hover:text-turf">{site.email}</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-turf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <span class="not-italic text-loam">{site.address.street}<br />{site.address.city}, {site.address.state} {site.address.zip}</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-turf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+              <span class="text-loam">{site.hoursLabel}</span>
+            </li>
+          </ul>
+          <a href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`} class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-turf hover:text-turf-dark">Get directions <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <div class="overflow-hidden rounded-2xl border border-line">
+          <iframe
+            title="Map to T&T Lawn & Landscape"
+            src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+            width="100%" height="240" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config/site";
+import PageHero from "../components/PageHero.astro";
+const updated = "August 2026";
+---
+<Layout title="Privacy Policy" description="How T&T Lawn & Landscape collects, uses, and protects your information.">
+  <PageHero title="Privacy Policy" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Privacy Policy" }]} />
+  <section class="bg-cream">
+    <div class="container-tt py-16">
+      <article class="prose mx-auto max-w-3xl">
+        <p><em>Last updated: {updated}</em></p>
+        <p>{site.name} ("we", "us", or "our") respects your privacy. This policy explains what information we collect through {site.url} and how we use it.</p>
+        <h2>Information we collect</h2>
+        <p>When you contact us or request a quote, we collect the information you provide — such as your name, phone number, email address, property details, and message. We may also collect basic analytics about how visitors use our website.</p>
+        <h2>How we use your information</h2>
+        <p>We use your information to respond to inquiries, provide quotes and services, schedule work, and communicate with you about your project. We do not sell your personal information.</p>
+        <h2>How we share information</h2>
+        <p>We may share information with service providers who help us operate our business (for example, form and email providers), and where required by law. These providers are only permitted to use your information to perform services on our behalf.</p>
+        <h2>Your choices</h2>
+        <p>You may contact us at any time to request access to, correction of, or deletion of the personal information we hold about you.</p>
+        <h2>Contact</h2>
+        <p>Questions about this policy? Call us at {site.phone} or email {site.email}.</p>
+      </article>
+      <p class="mx-auto mt-8 max-w-3xl text-xs text-stone">This is a general template. Please have it reviewed by legal counsel before publishing to ensure it fits your business and complies with applicable law.</p>
+    </div>
+  </section>
+</Layout>

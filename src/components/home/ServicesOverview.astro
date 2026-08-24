@@ -1,0 +1,38 @@
+---
+import { serviceHighlights } from "../../data/homepage";
+import SectionHeading from "../SectionHeading.astro";
+---
+<section class="bg-cream">
+  <div class="container-tt py-20">
+    <div class="mx-auto max-w-2xl text-center">
+      <SectionHeading eyebrow="Residential Services" title="Your yard deserves the T&T touch" align="center" />
+      <p class="mt-5 text-stone">
+        Your home should feel like a retreat the moment you pull into the driveway. We handle the
+        mowing, trimming, planting, and design work so your outdoor space stays beautiful year-round
+        without you lifting a finger.
+      </p>
+      <p class="mt-4 text-stone">
+        From routine maintenance to full landscape transformations, our crews treat every property
+        like it's their own — punctual, detail-oriented, and easy to work with.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-8 md:grid-cols-3">
+      {serviceHighlights.map((s) => (
+        <a href={s.href} class="group block overflow-hidden rounded-2xl border border-line bg-white transition-shadow hover:shadow-lg">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src={s.image} alt={s.alt} loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-xl font-semibold text-oak">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{s.description}</p>
+            <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-turf transition-colors group-hover:text-turf-dark">
+              Explore {s.title.toLowerCase()}
+              <span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

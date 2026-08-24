@@ -1,0 +1,16 @@
+---
+import { projects } from "../../data/projects";
+import SectionHeading from "../SectionHeading.astro";
+---
+<section class="bg-cream">
+  <div class="container-tt py-20">
+    <SectionHeading eyebrow="See Our Work" title="Our recent projects" align="center" class="mx-auto max-w-xl" />
+    <div class="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3">
+      {projects.map((p) => (
+        <figure class="group relative overflow-hidden rounded-xl">
+          <img src={p.src} alt={p.alt} loading="lazy" decoding="async" class="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>

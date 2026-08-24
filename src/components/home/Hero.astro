@@ -1,0 +1,33 @@
+---
+import { site } from "../../config/site";
+import { hero } from "../../data/homepage";
+import Button from "../Button.astro";
+---
+<section class="relative isolate overflow-hidden bg-oak">
+  <img
+    src={hero.image}
+    alt=""
+    aria-hidden="true"
+    class="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
+    loading="eager"
+    fetchpriority="high"
+  />
+  <div class="absolute inset-0 -z-10 bg-oak/70"></div>
+  <div class="container-tt py-24 text-center sm:py-32">
+    <p class="eyebrow">Charleston, SC &middot; Lawn &amp; Landscaping</p>
+    <h1 class="mx-auto mt-4 max-w-4xl text-4xl leading-[1.08] text-cream sm:text-6xl">
+      {site.tagline}
+    </h1>
+    <p class="mx-auto mt-6 max-w-xl text-lg text-cream/80">
+      Licensed, insured, and committed to quality — over {site.yearsExperience} years making
+      Charleston-area yards the best on the block.
+    </p>
+    <div class="mt-9 flex flex-wrap justify-center gap-3">
+      <Button href="/contact/" size="lg">Get a free quote</Button>
+      <Button href={site.phoneHref} variant="outlineLight" size="lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5a2 2 0 012-2h2.6a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.5 1.2L8.2 9.6a12 12 0 006.2 6.2l1.12-1.85a1 1 0 011.2-.5l3.6 1.2a1 1 0 01.68.95V18a2 2 0 01-2 2A16 16 0 013 5z"/></svg>
+        {site.phone}
+      </Button>
+    </div>
+  </div>
+</section>

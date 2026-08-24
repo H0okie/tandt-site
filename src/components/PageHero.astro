@@ -1,0 +1,13 @@
+---
+import Breadcrumbs from "./Breadcrumbs.astro";
+interface Crumb { label: string; href?: string; }
+interface Props { title: string; subtitle?: string; breadcrumbs: Crumb[]; }
+const { title, subtitle, breadcrumbs } = Astro.props;
+---
+<section class="bg-oak">
+  <div class="container-tt py-14">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1 class="mt-5 max-w-3xl text-4xl text-cream sm:text-5xl">{title}</h1>
+    {subtitle && <p class="mt-4 max-w-2xl text-lg text-cream/80">{subtitle}</p>}
+  </div>
+</section>

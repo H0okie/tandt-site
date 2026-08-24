@@ -1,0 +1,34 @@
+---
+const items = [
+  {
+    title: "Landscaping Service",
+    text: "Licensed, insured, and committed to quality.",
+    icon: `<path d="M12 3l7 3v5c0 4.4-3 8.3-7 9.4C8 19.3 5 15.4 5 11V6l7-3z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9.5 11.5l1.8 1.8 3.4-3.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
+  },
+  {
+    title: "24/7 Support",
+    text: "Storm damage or last-minute event? Call us anytime.",
+    icon: `<circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
+  },
+  {
+    title: "5 Star Reviews",
+    text: "Over two decades serving the Charleston area.",
+    icon: `<path d="M12 4l2.3 4.7 5.2.8-3.8 3.6.9 5.1L12 15.9 7.4 18.3l.9-5.1L4.5 9.5l5.2-.8L12 4z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>`,
+  },
+];
+---
+<section class="border-b border-line bg-limestone">
+  <div class="container-tt grid gap-8 py-10 sm:grid-cols-3">
+    {items.map((item) => (
+      <div class="flex items-start gap-4">
+        <span class="flex h-11 w-11 flex-none items-center justify-center rounded-full bg-turf/10 text-turf">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" set:html={item.icon} />
+        </span>
+        <div>
+          <h3 class="font-display text-lg font-semibold text-oak">{item.title}</h3>
+          <p class="mt-1 text-sm leading-relaxed text-stone">{item.text}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

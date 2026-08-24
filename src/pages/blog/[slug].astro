@@ -1,0 +1,34 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBanner from "../../components/home/CtaBanner.astro";
+import { blogPosting, breadcrumbList } from "../../lib/schema";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const fmt = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const crumbs = [{ label: "Home", href: "/" }, { label: "News", href: "/blog/" }, { label: post.data.title }];
+const schema = [blogPosting(post.data, pageUrl), breadcrumbList(crumbs)];
+---
+<Layout title={post.data.title} description={post.data.description} schema={schema}>
+  <PageHero
+    title={post.data.title}
+    subtitle={`${fmt(post.data.pubDate)} · ${post.data.author}`}
+    breadcrumbs={crumbs}
+  />
+  <section class="bg-cream">
+    <div class="container-tt py-16">
+      <article class="prose prose-lg mx-auto max-w-3xl">
+        <Content />
+      </article>
+    </div>
+  </section>
+  <CtaBanner />
+</Layout>

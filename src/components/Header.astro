@@ -1,0 +1,188 @@
+---
+import { getCollection } from "astro:content";
+import { site } from "../config/site";
+import Logo from "./Logo.astro";
+import Button from "./Button.astro";
+
+const categories = (await getCollection("serviceCategories")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const allServices = await getCollection("services", ({ data }) => !data.draft);
+const servicesByCat = new Map(
+  categories.map((c) => [
+    c.id,
+    allServices
+      .filter((s) => s.data.category.id === c.id)
+      .sort((a, b) => a.data.order - b.data.order),
+  ])
+);
+
+const phoneIcon =
+  "M3 5a2 2 0 012-2h2.6a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.5 1.2L8.2 9.6a12 12 0 006.2 6.2l1.12-1.85a1 1 0 011.2-.5l3.6 1.2a1 1 0 01.68.95V18a2 2 0 01-2 2A16 16 0 013 5z";
+---
+
+<header data-header class="sticky top-0 z-40 border-b border-line bg-cream/95 backdrop-blur">
+  <div class="container-tt flex items-center justify-between gap-4 py-3">
+    <Logo />
+
+    <!-- Desktop nav (shows at xl; below that the drawer is used) -->
+    <nav aria-label="Main" class="hidden xl:block">
+      <ul class="flex items-center gap-1">
+        {categories.map((cat) => (
+          <li data-menu-item class="static">
+            <button
+              type="button"
+              data-menu-trigger={cat.id}
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-controls={`panel-${cat.id}`}
+              class="flex items-center gap-1 rounded-md px-3 py-2 text-[18px] font-semibold text-loam transition-colors hover:text-turf aria-expanded:text-turf"
+            >
+              {cat.data.menuLabel ?? cat.data.title}
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="mt-0.5 opacity-60"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div
+              id={`panel-${cat.id}`}
+              data-menu-panel={cat.id}
+              hidden
+              class="absolute left-0 right-0 top-full border-b border-line bg-cream shadow-lg"
+            >
+              <div class="container-tt grid grid-cols-[minmax(0,16rem)_1fr] gap-10 py-8">
+                <div>
+                  <p class="eyebrow">{cat.data.title}</p>
+                  <p class="mt-3 text-sm leading-relaxed text-stone">{cat.data.description}</p>
+                  <a href={`/services/${cat.id}/`} class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-turf hover:text-turf-dark">
+                    View all {cat.data.title.toLowerCase()}
+                    <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </div>
+                <ul class="grid grid-cols-2 gap-x-8 gap-y-1 2xl:grid-cols-3">
+                  {servicesByCat.get(cat.id)!.map((s) => (
+                    <li>
+                      <a href={`/services/${cat.id}/${s.id}/`} class="block rounded-md px-3 py-2 transition-colors hover:bg-limestone">
+                        <span class="block text-sm font-semibold text-oak">{s.data.title}</span>
+                        <span class="mt-0.5 block text-xs leading-snug text-stone">{s.data.shortDescription}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </li>
+        ))}
+        <li>
+          <a href="/about/" class="rounded-md px-3 py-2 text-[18px] font-semibold text-loam transition-colors hover:text-turf">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Right cluster: phone icon (number on hover/focus) + mobile menu toggle -->
+    <div class="flex items-center gap-1">
+      <div class="group relative">
+        <a href={site.phoneHref} aria-label={`Call ${site.phone}`} class="flex items-center rounded-md p-2 text-oak transition-colors hover:text-turf">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d={phoneIcon}/></svg>
+        </a>
+        <span role="tooltip" class="pointer-events-none absolute left-1/2 top-full z-50 mt-1 -translate-x-1/2 whitespace-nowrap rounded-md bg-oak px-3 py-1.5 text-sm font-semibold text-cream opacity-0 shadow-lg transition-opacity duration-150 group-hover:opacity-100 group-focus-within:opacity-100">
+          {site.phone}
+        </span>
+      </div>
+
+      <button type="button" data-drawer-toggle aria-expanded="false" aria-controls="mobile-drawer" class="inline-flex rounded-md p-2 text-oak xl:hidden">
+        <span class="sr-only">Open menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile drawer (below xl) -->
+  <div id="mobile-drawer" data-drawer hidden class="xl:hidden">
+    <div class="container-tt max-h-[80vh] overflow-y-auto border-t border-line py-4">
+      <ul class="flex flex-col gap-1">
+        {categories.map((cat) => (
+          <li class="border-b border-line/70">
+            <button type="button" data-acc-trigger={cat.id} aria-expanded="false" aria-controls={`acc-${cat.id}`} class="flex w-full items-center justify-between py-3 text-left text-[18px] font-semibold text-oak">
+              {cat.data.menuLabel ?? cat.data.title}
+              <svg data-acc-icon width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="transition-transform"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div id={`acc-${cat.id}`} data-acc-panel={cat.id} hidden class="pb-3">
+              <a href={`/services/${cat.id}/`} class="block py-1.5 text-sm font-semibold text-turf">View all {cat.data.title.toLowerCase()}</a>
+              <ul class="flex flex-col">
+                {servicesByCat.get(cat.id)!.map((s) => (
+                  <li><a href={`/services/${cat.id}/${s.id}/`} class="block py-1.5 text-sm text-stone">{s.data.title}</a></li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+        <li class="border-b border-line/70"><a href="/about/" class="block py-3 text-[18px] font-semibold text-oak">About</a></li>
+      </ul>
+      <Button href="/contact/" size="lg" class="mt-4 w-full">Get a free quote</Button>
+    </div>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector("[data-header]");
+  if (header) {
+    const triggers = Array.from(header.querySelectorAll("[data-menu-trigger]"));
+    const panelFor = (id: string) => header.querySelector(`[data-menu-panel="${id}"]`);
+
+    const closeAll = (except?: string) => {
+      triggers.forEach((t) => {
+        const id = (t as HTMLElement).dataset.menuTrigger!;
+        if (id === except) return;
+        t.setAttribute("aria-expanded", "false");
+        panelFor(id)?.setAttribute("hidden", "");
+      });
+    };
+    const open = (id: string) => {
+      closeAll(id);
+      header.querySelector(`[data-menu-trigger="${id}"]`)?.setAttribute("aria-expanded", "true");
+      panelFor(id)?.removeAttribute("hidden");
+    };
+    const close = (id: string) => {
+      header.querySelector(`[data-menu-trigger="${id}"]`)?.setAttribute("aria-expanded", "false");
+      panelFor(id)?.setAttribute("hidden", "");
+    };
+    const canHover = window.matchMedia("(hover: hover)").matches;
+    let closeTimer: number | undefined;
+    const cancelClose = () => { if (closeTimer) { clearTimeout(closeTimer); closeTimer = undefined; } };
+    const scheduleClose = (id: string) => { cancelClose(); closeTimer = window.setTimeout(() => close(id), 220); };
+
+    triggers.forEach((t) => {
+      const id = (t as HTMLElement).dataset.menuTrigger!;
+      const item = t.closest("[data-menu-item]")!;
+      t.addEventListener("click", () =>
+        t.getAttribute("aria-expanded") === "true" ? close(id) : open(id)
+      );
+      if (canHover) {
+        // pointerenter/leave on the whole item covers both the trigger AND the
+        // panel (the panel is a child of the item). The short close delay lets
+        // the cursor cross the gap between them without the panel vanishing.
+        item.addEventListener("pointerenter", () => { cancelClose(); open(id); });
+        item.addEventListener("pointerleave", () => scheduleClose(id));
+      }
+    });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeAll(); });
+    document.addEventListener("click", (e) => { if (!header.contains(e.target as Node)) closeAll(); });
+
+    const drawerToggle = header.querySelector("[data-drawer-toggle]");
+    const drawer = header.querySelector("[data-drawer]");
+    drawerToggle?.addEventListener("click", () => {
+      const isHidden = drawer?.hasAttribute("hidden");
+      if (isHidden) { drawer?.removeAttribute("hidden"); drawerToggle.setAttribute("aria-expanded", "true"); }
+      else { drawer?.setAttribute("hidden", ""); drawerToggle.setAttribute("aria-expanded", "false"); }
+    });
+    header.querySelectorAll("[data-acc-trigger]").forEach((t) => {
+      t.addEventListener("click", () => {
+        const id = (t as HTMLElement).dataset.accTrigger!;
+        const panel = header.querySelector(`[data-acc-panel="${id}"]`);
+        const icon = t.querySelector("[data-acc-icon]");
+        const isOpen = !panel?.hasAttribute("hidden");
+        if (isOpen) { panel?.setAttribute("hidden", ""); t.setAttribute("aria-expanded", "false"); (icon as HTMLElement)?.style.removeProperty("transform"); }
+        else { panel?.removeAttribute("hidden"); t.setAttribute("aria-expanded", "true"); (icon as HTMLElement)?.style.setProperty("transform", "rotate(180deg)"); }
+      });
+    });
+  }
+</script>

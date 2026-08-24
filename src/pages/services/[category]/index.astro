@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import ServiceCard from "../../../components/ServiceCard.astro";
+import Button from "../../../components/Button.astro";
+import CtaBanner from "../../../components/home/CtaBanner.astro";
+import { breadcrumbList } from "../../../lib/schema";
+
+export async function getStaticPaths() {
+  const categories = await getCollection("serviceCategories");
+  return categories.map((category) => ({
+    params: { category: category.id },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const services = (
+  await getCollection("services", ({ data }) => !data.draft && data.category.id === category.id)
+).sort((a, b) => a.data.order - b.data.order);
+const crumbs = [{ label: "Home", href: "/" }, { label: "Services", href: "/services/" }, { label: category.data.title }];
+---
+<Layout title={category.data.title} description={category.data.description} schema={[breadcrumbList(crumbs)]}>
+  <section class="bg-oak">
+    <div class="container-tt py-14">
+      <Breadcrumbs items={crumbs} />
+      <h1 class="mt-5 max-w-3xl text-4xl text-cream sm:text-5xl">{category.data.title}</h1>
+      <p class="mt-4 max-w-2xl text-lg text-cream/80">{category.data.description}</p>
+      <Button href="/contact/" size="lg" class="mt-8">Get a free quote</Button>
+    </div>
+  </section>
+
+  <section class="bg-cream">
+    <div class="container-tt py-16">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {services.map((s) => (
+          <ServiceCard href={`/services/${category.id}/${s.id}/`} title={s.data.title} description={s.data.shortDescription} />
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBanner />
+</Layout>

@@ -1,0 +1,13 @@
+---
+import { site } from "../../config/site";
+---
+<section class="bg-oak">
+  <div class="container-tt grid gap-10 py-16 text-center sm:grid-cols-3">
+    {site.stats.map((stat) => (
+      <div>
+        <p class="font-display text-5xl font-semibold text-marigold">{stat.value}</p>
+        <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-cream/80">{stat.label}</p>
+      </div>
+    ))}
+  </div>
+</section>

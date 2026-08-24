@@ -1,0 +1,28 @@
+---
+import { site } from "../../config/site";
+import { whyUs } from "../../data/homepage";
+import Button from "../Button.astro";
+---
+<section class="bg-limestone">
+  <div class="container-tt grid items-center gap-12 py-20 lg:grid-cols-2">
+    <div>
+      <h2 class="max-w-md text-3xl text-oak sm:text-4xl">
+        {site.yearsExperience}+ years making Charleston yards the best on the block.
+      </h2>
+      <ul class="mt-8 space-y-4">
+        {whyUs.points.map((point) => (
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-turf text-cream">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4.2 4.2L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="text-loam">{point}</span>
+          </li>
+        ))}
+      </ul>
+      <Button href="/contact/" size="lg" variant="secondary" class="mt-9">Get your free quote</Button>
+    </div>
+    <div class="overflow-hidden rounded-2xl">
+      <img src={whyUs.image} alt={whyUs.alt} loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover" />
+    </div>
+  </div>
+</section>

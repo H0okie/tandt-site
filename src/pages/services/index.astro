@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import SectionHeading from "../../components/SectionHeading.astro";
+import CtaBanner from "../../components/home/CtaBanner.astro";
+
+const categories = (await getCollection("serviceCategories")).sort((a, b) => a.data.order - b.data.order);
+const allServices = await getCollection("services", ({ data }) => !data.draft);
+const countFor = (id: string) => allServices.filter((s) => s.data.category.id === id).length;
+---
+<Layout title="Our Services" description="Lawn care, landscaping, tree & shrub, hardscaping, irrigation, and commercial services across the Charleston, SC area.">
+  <section class="bg-oak">
+    <div class="container-tt py-14">
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
+      <h1 class="mt-5 max-w-3xl text-4xl text-cream sm:text-5xl">Our services</h1>
+      <p class="mt-4 max-w-2xl text-lg text-cream/80">
+        From weekly lawn care to full landscape transformations, hardscaping, and irrigation — everything
+        your Charleston-area property needs, handled by one trusted crew.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-cream">
+    <div class="container-tt py-16">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {categories.map((cat) => (
+          <a href={`/services/${cat.id}/`} class="group flex flex-col rounded-2xl border border-line bg-white p-7 transition-shadow hover:shadow-lg">
+            <p class="text-xs font-semibold uppercase tracking-wider text-marigold">{countFor(cat.id)} services</p>
+            <h2 class="mt-2 font-display text-2xl font-semibold text-oak">{cat.data.title}</h2>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-stone">{cat.data.description}</p>
+            <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-turf group-hover:text-turf-dark">
+              View {cat.data.title.toLowerCase()} <span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBanner />
+</Layout>

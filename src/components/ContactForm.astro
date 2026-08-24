@@ -1,0 +1,114 @@
+---
+import { getCollection } from "astro:content";
+import Button from "./Button.astro";
+
+const categories = (await getCollection("serviceCategories")).sort((a, b) => a.data.order - b.data.order);
+// Public Web3Forms access key — safe to expose. Set PUBLIC_WEB3FORMS_KEY in your
+// .env (and Cloudflare env vars). Get a free key at web3forms.com.
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? "";
+
+const field = "w-full rounded-lg border border-line bg-white px-4 py-3 text-loam placeholder:text-stone/60 focus:border-turf focus:outline-none focus:ring-2 focus:ring-marigold/40";
+const label = "block text-sm font-semibold text-oak";
+---
+<form data-contact-form action="https://api.web3forms.com/submit" method="POST" novalidate class="rounded-2xl border border-line bg-white p-6 sm:p-8">
+  <input type="hidden" name="access_key" value={accessKey} />
+  <input type="hidden" name="subject" value="New quote request — tandtlawnandlandscape.com" />
+  <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div class="sm:col-span-2">
+      <label class={label} for="cf-name">Name <span class="text-turf">*</span></label>
+      <input class={`mt-1.5 ${field}`} id="cf-name" name="name" type="text" required autocomplete="name" aria-describedby="err-name" />
+      <p id="err-name" data-error hidden class="mt-1 text-sm text-red-600"></p>
+    </div>
+    <div>
+      <label class={label} for="cf-phone">Phone <span class="text-turf">*</span></label>
+      <input class={`mt-1.5 ${field}`} id="cf-phone" name="phone" type="tel" required autocomplete="tel" aria-describedby="err-phone" />
+      <p id="err-phone" data-error hidden class="mt-1 text-sm text-red-600"></p>
+    </div>
+    <div>
+      <label class={label} for="cf-email">Email <span class="text-turf">*</span></label>
+      <input class={`mt-1.5 ${field}`} id="cf-email" name="email" type="email" required autocomplete="email" aria-describedby="err-email" />
+      <p id="err-email" data-error hidden class="mt-1 text-sm text-red-600"></p>
+    </div>
+    <div class="sm:col-span-2">
+      <label class={label} for="cf-service">Service needed</label>
+      <select class={`mt-1.5 ${field}`} id="cf-service" name="service">
+        <option value="">Select a service…</option>
+        {categories.map((c) => <option value={c.data.title}>{c.data.title}</option>)}
+        <option value="Other">Other / not sure</option>
+      </select>
+    </div>
+    <div class="sm:col-span-2">
+      <label class={label} for="cf-message">How can we help?</label>
+      <textarea class={`mt-1.5 ${field}`} id="cf-message" name="message" rows="4" placeholder="Tell us about your property and what you're looking for."></textarea>
+    </div>
+  </div>
+
+  <div data-form-status hidden class="mt-5 rounded-lg px-4 py-3 text-sm"></div>
+  <Button type="submit" size="lg" data-submit class="mt-6 w-full">Send my request</Button>
+  <p class="mt-3 text-center text-xs text-stone">Free, on-site, no-pressure estimates. We'll follow up with a written quote.</p>
+</form>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>("[data-contact-form]");
+  if (form) {
+    const status = form.querySelector<HTMLElement>("[data-form-status]")!;
+    const submit = form.querySelector<HTMLButtonElement>("[data-submit]")!;
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const showError = (id: string, msg: string) => {
+      const input = form.querySelector<HTMLElement>(`#${id}`)!;
+      const err = form.querySelector<HTMLElement>(`#err-${id.replace("cf-", "")}`)!;
+      input.setAttribute("aria-invalid", "true");
+      input.classList.add("border-red-500");
+      err.textContent = msg; err.hidden = false;
+      return input;
+    };
+    const clearError = (id: string) => {
+      const input = form.querySelector<HTMLElement>(`#${id}`)!;
+      const err = form.querySelector<HTMLElement>(`#err-${id.replace("cf-", "")}`)!;
+      input.removeAttribute("aria-invalid");
+      input.classList.remove("border-red-500");
+      err.hidden = true;
+    };
+    ["cf-name", "cf-phone", "cf-email"].forEach((id) => {
+      form.querySelector(`#${id}`)?.addEventListener("input", () => clearError(id));
+    });
+    const setStatus = (msg: string, ok: boolean) => {
+      status.textContent = msg;
+      status.hidden = false;
+      status.className = `mt-5 rounded-lg px-4 py-3 text-sm ${ok ? "bg-turf/10 text-turf-dark" : "bg-red-50 text-red-700"}`;
+    };
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      let firstInvalid: HTMLElement | null = null;
+      const name = (form.elements.namedItem("name") as HTMLInputElement).value.trim();
+      const phone = (form.elements.namedItem("phone") as HTMLInputElement).value.trim();
+      const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
+      if (!name) firstInvalid ||= showError("cf-name", "Please enter your name.");
+      if (!phone) firstInvalid ||= showError("cf-phone", "Please enter a phone number.");
+      if (!email) firstInvalid ||= showError("cf-email", "Please enter your email.");
+      else if (!emailRe.test(email)) firstInvalid ||= showError("cf-email", "Please enter a valid email address.");
+      if (firstInvalid) { firstInvalid.focus(); return; }
+
+      const original = submit.textContent;
+      submit.disabled = true; submit.textContent = "Sending…";
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: new FormData(form) });
+        const data = await res.json();
+        if (data.success) {
+          form.querySelectorAll("input, select, textarea, [data-submit]").forEach((el) => ((el as HTMLElement).style.display = "none"));
+          setStatus("Thanks! Your request is in — we'll be in touch shortly. For anything urgent, call 843-305-7025.", true);
+        } else {
+          setStatus("Something went wrong sending your request. Please call us at 843-305-7025.", false);
+          submit.disabled = false; submit.textContent = original;
+        }
+      } catch {
+        setStatus("Couldn't reach the server. Please check your connection or call 843-305-7025.", false);
+        submit.disabled = false; submit.textContent = original;
+      }
+    });
+  }
+</script>

@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/tandt-logo.png";
+import { site } from "../config/site";
+
+interface Props { dark?: boolean; class?: string; }
+const { dark = false, class: cls = "" } = Astro.props;
+
+const displayHeight = 34;
+const displayWidth = Math.round((displayHeight * logo.width) / logo.height);
+---
+<a href="/" class:list={["inline-flex items-center", cls]} aria-label={`${site.name} — home`}>
+  <Image
+    src={logo}
+    alt={site.name}
+    width={displayWidth}
+    height={displayHeight}
+    class:list={["h-[34px] w-auto", dark && "[filter:brightness(0)_invert(1)]"]}
+  />
+</a>

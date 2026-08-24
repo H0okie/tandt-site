@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config/site";
+import PageHero from "../components/PageHero.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import Stats from "../components/home/Stats.astro";
+import CtaBanner from "../components/home/CtaBanner.astro";
+
+const values = [
+  { title: "Treated like our own", text: "Our crews treat every property as if it were theirs — punctual, detail-oriented, and easy to work with." },
+  { title: "Licensed and insured", text: "Fully licensed, bonded, and insured. We're happy to provide documentation before any work begins." },
+  { title: "No-pressure estimates", text: "Every estimate is free and on-site. We walk the property with you and follow up with a clear written quote." },
+  { title: "Built for the Lowcountry", text: "Two decades of experience with Charleston's climate, soil, and the way local yards actually grow." },
+];
+---
+<Layout title="About Us" description={`Over ${site.yearsExperience} years of trusted, professional lawn care and landscaping in Charleston, SC. Licensed, bonded, and insured.`}>
+  <PageHero
+    title="About T&T Lawn & Landscape"
+    subtitle={`Over ${site.yearsExperience} years making Charleston-area yards the best on the block.`}
+    breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
+  />
+
+  <section class="bg-cream">
+    <div class="container-tt grid gap-12 py-20 lg:grid-cols-2">
+      <div class="prose max-w-none">
+        <p>
+          For more than {site.yearsExperience} years, T&T Lawn & Landscape has helped homeowners and
+          businesses across Charleston, South Carolina keep their outdoor spaces healthy, beautiful,
+          and easy to enjoy. What started as a commitment to quality and reliability has grown into a
+          full-service lawn care and landscaping company trusted on more than a thousand residential
+          and commercial properties.
+        </p>
+        <p>
+          We handle everything from routine mowing and fertilization to full landscape design,
+          hardscaping, irrigation, and tree work — so you have one dependable crew for the whole
+          property. We're licensed, bonded, and fully insured, and we treat every job like it's our
+          own front yard.
+        </p>
+        <p>
+          Whether you need weekly maintenance, a complete transformation, or fast storm cleanup,
+          we're here to help you maintain a property you can be proud of.
+        </p>
+      </div>
+      <div>
+        <SectionHeading eyebrow="Why homeowners choose us" title="Reliable, professional, local" />
+        <div class="mt-8 grid gap-6 sm:grid-cols-2">
+          {values.map((v) => (
+            <div class="rounded-2xl border border-line bg-white p-5">
+              <h3 class="font-display text-lg font-semibold text-oak">{v.title}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone">{v.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Stats />
+  <CtaBanner />
+</Layout>

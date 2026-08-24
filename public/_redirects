@@ -1,0 +1,58 @@
+# ==========================================================================
+# T&T Lawn & Landscape — Cloudflare Pages redirect map
+# Old WordPress URLs -> new Astro URLs. 301 = permanent (passes SEO equity).
+# This file is copied verbatim into /dist at build time.
+#
+# Pages whose URL did NOT change need no rule and are intentionally omitted:
+#   /  /blog/  /contact/  /privacy-policy/  /terms-service/  /disclaimer/
+# ==========================================================================
+
+# --- Lawn Care (old flat /services/{slug}/ -> /services/lawn-care/{slug}/) ---
+/services/lawn-mowing-maintenance/     /services/lawn-care/mowing-edging/       301
+/services/lawn-aeration-overseed/      /services/lawn-care/aeration-overseed/   301
+/services/sod-grass-installation/      /services/lawn-care/sod-installation/    301
+/services/synthetic-turf-installation/ /services/lawn-care/synthetic-turf/      301
+/services/fertilization-programs/      /services/lawn-care/fertilization/       301
+/services/weed-control/                /services/lawn-care/weed-control/         301
+/services/lawn-insect-control/         /services/lawn-care/insect-control/       301
+/services/lawn-renovation-leveling/    /services/lawn-care/lawn-renovation/      301
+
+# --- Landscaping ---
+/services/landscape-design/            /services/landscaping/landscape-design/       301
+/landscaping-2/                        /services/landscaping/full-installations/     301
+/services/landscape-renovation/        /services/landscaping/renovations/            301
+/services/mulching-bed-edging/         /services/landscaping/mulching/               301
+/services/flower-bed-installation/     /services/landscaping/flower-bed-installation/ 301
+/services/seasonal-plantings/          /services/landscaping/seasonal-plantings/     301
+
+# --- Tree & Shrub ---
+/services/tree-trimming/               /services/tree-shrub/tree-trimming/           301
+/services/tree-removal/                /services/tree-shrub/tree-removal/            301
+/services/stump-grinding/              /services/tree-shrub/stump-grinding/          301
+/services/shrub-hedge-trimming/        /services/tree-shrub/shrub-hedge-trimming/    301
+/services/storm-damage-cleanup/        /services/tree-shrub/storm-cleanup/           301
+
+# --- Hardscaping ---
+/services/fire-pits/                   /services/hardscaping/fire-pits/              301
+/services/outdoor-seating-areas/       /services/hardscaping/outdoor-seating-areas/  301
+/services/outdoor-kitchens/            /services/hardscaping/outdoor-kitchens/       301
+/services/pergolas-small-structures/   /services/hardscaping/pergolas-structures/    301
+/services/decorative-landscape-features/ /services/hardscaping/decorative-features/ 301
+/services/water-features-fountains/    /services/hardscaping/fountains/              301
+
+# --- Irrigation ---
+/services/sprinkler-installation/      /services/irrigation/sprinkler-installation/  301
+/services/sprinkler-repair/            /services/irrigation/irrigation-repair/       301
+/services/drip-irrigation/             /services/irrigation/drip-irrigation/         301
+/services/french-drain/                /services/irrigation/french-drains/           301
+/services/yard-drainage-solutions/     /services/irrigation/yard-drainage/           301
+
+# --- Commercial ---
+/services/hoa-landscape-services/      /services/commercial/hoa-maintenance/         301
+/services/commercial-maintenance/      /services/commercial/commercial-maintenance/  301
+/services/new-construction-installs/   /services/commercial/new-construction/        301
+/services/pressure-washing/            /services/commercial/pressure-washing/        301
+
+# --- Moved top-level pages ---
+/about-us/                             /about/                                        301
+/lawn-care-maintenance/                /services/lawn-care/                            301
