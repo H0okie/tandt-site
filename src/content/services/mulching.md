@@ -12,7 +12,7 @@ draft: false
 ---
 Mulch installation in Charleston, SC protects your landscape beds, reduces weed growth, and gives your property a clean, finished look. T&T delivers professional mulching for homeowners, HOAs, property managers, and businesses across the greater Charleston area — handling every step from bed preparation and edging to mulch delivery and installation. In Charleston's sandy soil, salt exposure, and humid climate, a properly installed 2–3 inch mulch layer regulates soil temperature, holds moisture during summer heat, and suppresses weeds without chemicals.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/bed-edging-Charleston-SC.webp" alt="Bed edging in Charleston, SC" loading="lazy" />
+<img src="/images/services/bed-edging-charleston-sc.webp" alt="Bed edging in Charleston, SC" loading="lazy" />
 
 ## Mulching service and delivery
 

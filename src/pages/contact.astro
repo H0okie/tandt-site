@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { site } from "../config/site";
 import PageHero from "../components/PageHero.astro";
 import ContactForm from "../components/ContactForm.astro";
+import GhlForm from "../components/GhlForm.astro";
 
 const mapQuery = encodeURIComponent(
   `${site.address.street} ${site.address.city} ${site.address.state} ${site.address.zip}`
@@ -17,7 +18,9 @@ const mapQuery = encodeURIComponent(
 
   <section class="bg-cream">
     <div class="container-tt grid gap-12 py-20 lg:grid-cols-[1fr_20rem]">
-      <ContactForm />
+      <GhlForm title="Request your free quote">
+        <ContactForm />
+      </GhlForm>
 
       <aside class="space-y-8">
         <div>

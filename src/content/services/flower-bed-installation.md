@@ -12,7 +12,7 @@ draft: false
 ---
 Flower bed installation in Charleston, SC starts with understanding the land you're working with. Sandy soil, a high water table, salt air from the coast, and intense summer heat all shape what thrives here. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T designs and installs flower beds built specifically for Lowcountry conditions — handling every step from design and soil prep through planting, mulching, and ongoing seasonal care. Our crews live and work here, so we know which plants perform and which struggle by August.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/garden-bed-installation-Charleston-SC.webp" alt="Garden bed installation in Charleston, SC" loading="lazy" />
+<img src="/images/services/garden-bed-installation-charleston-sc.webp" alt="Garden bed installation in Charleston, SC" loading="lazy" />
 
 ## Custom design and garden bed build-out
 

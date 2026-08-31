@@ -2,7 +2,7 @@
 # T&T Lawn & Landscape — Cloudflare Pages response headers
 # Copied verbatim into /dist at build time.
 # Cloudflare merges all matching blocks; the MORE SPECIFIC path wins on
-# conflicting headers, so /_astro/* below overrides the /* cache rule.
+# conflicting headers, so /tradeup-os/* below overrides the /* cache rule.
 # ==========================================================================
 
 # Baseline: applies to every response (HTML + assets).
@@ -16,7 +16,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 # Astro fingerprints these filenames, so they can be cached forever.
-/_astro/*
+/tradeup-os/*
   Cache-Control: public, max-age=31536000, immutable
 
 # Static files served straight from /public.

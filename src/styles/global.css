@@ -30,9 +30,17 @@
     background-color: var(--color-cream);
     color: var(--color-loam);
     font-family: var(--font-sans);
+    /* §6 standard: body text 20px minimum — trade-service customers skew older
+       and mobile, and a 14–16px default is a conversion problem. */
+    font-size: 1.25rem;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
+  /* §5: browsers hide [hidden] with a low-priority UA rule that any author
+     `display` outranks. Force it, so JS `.hidden = true` and the mobile drawer
+     actually disappear regardless of utility classes. */
+  [hidden] { display: none !important; }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-weight: 600;
@@ -77,3 +85,29 @@
   .prose :is(h1, h2, h3, h4) { font-family: var(--font-display); }
   .prose a { text-decoration-thickness: 1px; text-underline-offset: 2px; }
 }
+
+/* ---- §5 Mobile drawer: native <details> accordions + sticky action bar ---- */
+@layer components {
+  /* Kill the default disclosure triangle; the chevron svg is our indicator. */
+  .drawer-acc > summary { list-style: none; cursor: pointer; }
+  .drawer-acc > summary::-webkit-details-marker { display: none; }
+  .drawer-acc > summary [data-chevron] { transition: transform 0.2s ease; }
+  .drawer-acc[open] > summary [data-chevron] { transform: rotate(180deg); }
+  /* Hide the sticky action bar while the drawer is open (else it floats over it). */
+  html.drawer-open [data-action-bar] { display: none; }
+}
+
+/* The sticky mobile action bar occupies the bottom edge below the xl breakpoint,
+   where the desktop nav (and its phone number + CTA) collapses into the burger.
+   Reserve equal space on <body> so it can never cover the footer's last line. */
+@media (max-width: 1279.98px) {
+  body { padding-bottom: calc(3.25rem + env(safe-area-inset-bottom)); }
+}
+
+/* ---- §5 Third-party review widget: reserve space + fade in (no layout jump) ----
+   Kept in global.css (not a scoped component <style>) so it never reintroduces
+   the data-astro-cid stamps the §5 white-label pass removed. */
+@layer components {
+  .ti-reserve { min-height: 360px; animation: ti-fade 0.5s ease both; }
+}
+@keyframes ti-fade { from { opacity: 0; } to { opacity: 1; } }

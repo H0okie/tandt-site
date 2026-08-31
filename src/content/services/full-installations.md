@@ -12,7 +12,7 @@ draft: false
 ---
 Landscape installation in Charleston, SC requires a company that understands the Lowcountry's sandy soil, high water tables, salt exposure, and subtropical climate. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T provides full-service installation for residential and commercial properties — from initial design and grading through planting, hardscape construction, and ongoing maintenance — all under one team, with one point of contact who knows your property and the plan.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/backyard-design-Mount-Pleasant-SC.webp" alt="Backyard landscape design in Mount Pleasant, SC" loading="lazy" />
+<img src="/images/services/backyard-design-mount-pleasant-sc.webp" alt="Backyard landscape design in Mount Pleasant, SC" loading="lazy" />
 
 ## Complete installation for new and existing properties
 

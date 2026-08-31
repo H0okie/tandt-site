@@ -12,7 +12,7 @@ draft: false
 ---
 Weed control in Charleston, SC starts with understanding what grows here and why. The Lowcountry's sandy soil, high humidity, coastal salt, and subtropical temperatures create the perfect environment for aggressive weeds like crabgrass, nutsedge, spurge, and clover. Without a consistent plan, these invaders choke out the warm-season grasses Charleston lawns depend on. Founded by Timothy Fowler, T&T delivers targeted pre- and post-emergent treatments built around Lowcountry conditions — we live and work here, so we know the soil, drainage, and seasonal weed cycles.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/weed-control-Charleston-SC.webp" alt="Weed control in Charleston, SC" loading="lazy" />
+<img src="/images/services/weed-control-charleston-sc.webp" alt="Weed control in Charleston, SC" loading="lazy" />
 
 ## Program-based lawn weed control
 

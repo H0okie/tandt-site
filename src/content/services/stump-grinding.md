@@ -12,7 +12,7 @@ draft: false
 ---
 T&T Lawn and Landscape provides professional stump grinding in Charleston, SC for residential and commercial properties throughout the Lowcountry. Old stumps take up usable yard space, attract termites and carpenter ants, and create tripping hazards. Our crew uses professional-grade grinders to remove stumps below grade quickly and cleanly, then handles backfill, grading, and restoration so your lawn looks like the stump was never there. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T is a full-service company — one team, one estimate, one point of contact from grinding through final restoration.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/tree-stump-grinding-Charleston.webp" alt="Tree stump grinding in Charleston, SC" loading="lazy" />
+<img src="/images/services/tree-stump-grinding-charleston.webp" alt="Tree stump grinding in Charleston, SC" loading="lazy" />
 
 ## Stump grinding vs. full removal
 

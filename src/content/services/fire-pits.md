@@ -12,7 +12,7 @@ draft: false
 ---
 Outdoor fire pit installation in Charleston, SC gives homeowners and businesses a functional gathering space they can use nearly year-round — Charleston's mild winters and long fall evenings make a fire pit one of the most practical additions to any Lowcountry property. Founded and owner-operated by Timothy Fowler, T&T handles every step from the initial site assessment and design consultation through construction and hardscape integration. Because we also install patios, seating walls, and outdoor kitchens, your fire pit becomes part of a complete outdoor living space rather than a standalone feature.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/custom-fire-pit-Charleston.webp" alt="Custom fire pit in Charleston, SC" loading="lazy" />
+<img src="/images/services/custom-fire-pit-charleston.webp" alt="Custom fire pit in Charleston, SC" loading="lazy" />
 
 ## Custom design and construction
 

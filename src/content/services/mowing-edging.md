@@ -14,7 +14,7 @@ T&T Lawn and Landscape provides professional lawn mowing service in Charleston, 
 
 Charleston's subtropical climate keeps grass growing aggressively from March through November. Sandy soil, salt exposure, and afternoon thunderstorms create conditions that demand consistent, knowledgeable lawn care. Our crews work in these conditions every day, and our programs are built around the specific challenges that exist here — not a one-size-fits-all franchise playbook shipped in from another state.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/Lawn-Mowing-Service-in-Charleston-SC.webp" alt="Lawn mowing service in Charleston, SC" loading="lazy" />
+<img src="/images/services/lawn-mowing-service-in-charleston-sc.webp" alt="Lawn mowing service in Charleston, SC" loading="lazy" />
 
 ## Lawn mowing in Charleston, SC
 

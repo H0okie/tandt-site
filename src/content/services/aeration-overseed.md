@@ -12,7 +12,7 @@ draft: false
 ---
 T&T Lawn and Landscape provides professional lawn aeration and overseeding in Charleston, SC for residential and commercial properties across the Lowcountry. Founded and owner-operated by Timothy Fowler, T&T works in Charleston's sandy soil, salt air, and subtropical humidity every day — so our programs are built for the conditions here, not shipped in from another climate zone.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-aeration-in-charleston.webp" alt="Lawn aeration in Charleston, SC" loading="lazy" />
+<img src="/images/services/lawn-aeration-in-charleston.webp" alt="Lawn aeration in Charleston, SC" loading="lazy" />
 
 ## Core aeration in Charleston, SC
 

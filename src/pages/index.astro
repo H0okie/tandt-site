@@ -7,6 +7,7 @@ import WhyUs from "../components/home/WhyUs.astro";
 import Stats from "../components/home/Stats.astro";
 import Projects from "../components/home/Projects.astro";
 import Testimonials from "../components/home/Testimonials.astro";
+import Reviews from "../components/Reviews.astro";
 import Faq from "../components/home/Faq.astro";
 import CtaBanner from "../components/home/CtaBanner.astro";
 import { faqs } from "../data/faqs";
@@ -19,7 +20,9 @@ import { faqPage } from "../lib/schema";
   <WhyUs />
   <Stats />
   <Projects />
-  <Testimonials />
+  <Reviews>
+    <Testimonials />
+  </Reviews>
   <Faq />
   <CtaBanner />
 </Layout>

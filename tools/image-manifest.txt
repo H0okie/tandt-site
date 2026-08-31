@@ -1,0 +1,43 @@
+# T&T Lawn & Landscape — image manifest  (TradeUp OS §8)
+# One line per image:  <source-url> | <destination-path>
+# The robot (.github/workflows/fetch-images.yml) downloads each source not
+# already present, rejects HTML masquerading as an image, normalizes to WebP
+# capped at display width, commits the result, and triggers a deploy.
+# Sources are the client's old WordPress CDN — retired at DNS cutover, so
+# every one of these must live in the repo before launch.
+
+# --- Service hero images (one per service page) ---
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/HOA-grounds-maintenance-Charleston.webp | public/images/services/hoa-grounds-maintenance-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/Lawn-Mowing-Service-in-Charleston-SC.webp | public/images/services/lawn-mowing-service-in-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/Lawn-pest-control-in-Charleston-SC.webp | public/images/services/lawn-pest-control-in-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/backyard-design-Mount-Pleasant-SC.webp | public/images/services/backyard-design-mount-pleasant-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/backyard-water-feature-Charleston.webp | public/images/services/backyard-water-feature-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/bed-edging-Charleston-SC.webp | public/images/services/bed-edging-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/bush-trimming-Charleston.webp | public/images/services/bush-trimming-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/commercial-landscape-maintenance-Charleston-SC.webp | public/images/services/commercial-landscape-maintenance-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/custom-fire-pit-Charleston.webp | public/images/services/custom-fire-pit-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/dead-tree-removal-Charleston-SC.webp | public/images/services/dead-tree-removal-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/decorative-rock-installation-Charleston-SC.webp | public/images/services/decorative-rock-installation-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/developer-landscaping-Charleston-SC.webp | public/images/services/developer-landscaping-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/drip-system-Charleston.webp | public/images/services/drip-system-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/french-drain-installer-Charleston.webp | public/images/services/french-drain-installer-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/garden-bed-installation-Charleston-SC.webp | public/images/services/garden-bed-installation-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/hurricane-cleanup-Charleston-SC-.webp | public/images/services/hurricane-cleanup-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/irrigation-company-Charleston.webp | public/images/services/irrigation-company-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/landscape-remodel-Charleston-SC.jpg | public/images/services/landscape-remodel-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-aeration-in-charleston.webp | public/images/services/lawn-aeration-in-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-feeding-service-Charleston.webp | public/images/services/lawn-feeding-service-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-leveling-Charleston-SC.webp | public/images/services/lawn-leveling-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/new-landscape-install-Charleston-SC.webp | public/images/services/new-landscape-install-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/outdoor-kitchen-builder-Charleston-SC.webp | public/images/services/outdoor-kitchen-builder-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/outdoor-seating-area-installation-Charleston-SC.webp | public/images/services/outdoor-seating-area-installation-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/patio-cleaning-Charleston-SC.webp | public/images/services/patio-cleaning-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/pergola-builder-Charleston.webp | public/images/services/pergola-builder-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/sod-grass-install-charlestone-SC.webp | public/images/services/sod-grass-install-charlestone-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/spring-planting-Charleston-SC.jpg | public/images/services/spring-planting-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/sprinkler-repair-Charleston-SC.webp | public/images/services/sprinkler-repair-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/tree-maintenance-Charleston-SC.webp | public/images/services/tree-maintenance-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/tree-stump-grinding-Charleston.webp | public/images/services/tree-stump-grinding-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/turf-installer-Charleston-SC.webp | public/images/services/turf-installer-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/weed-control-Charleston-SC.webp | public/images/services/weed-control-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/wet-yard-solutions-Charleston.webp | public/images/services/wet-yard-solutions-charleston.webp

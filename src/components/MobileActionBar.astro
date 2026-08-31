@@ -1,0 +1,32 @@
+---
+// §5 Sticky mobile action bar. When the desktop nav collapses to a burger,
+// the header's phone number and CTA go with it — so a phone visitor has no
+// visible way to call or convert without opening a menu first. This pins both
+// to the bottom edge below the xl breakpoint. It hides while the drawer is open
+// (via html.drawer-open in global.css), pads for the iPhone home indicator, and
+// <body> reserves matching space so it never covers the footer's last line.
+import { site } from "../config/site";
+
+const phoneIcon =
+  "M3 5a2 2 0 012-2h2.6a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.5 1.2L8.2 9.6a12 12 0 006.2 6.2l1.12-1.85a1 1 0 011.2-.5l3.6 1.2a1 1 0 01.68.95V18a2 2 0 01-2 2A16 16 0 013 5z";
+---
+
+<div
+  data-action-bar
+  class="fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 border-t border-line bg-cream/95 backdrop-blur xl:hidden"
+  style="padding-bottom: env(safe-area-inset-bottom);"
+>
+  <a
+    href={site.phoneHref}
+    class="flex items-center justify-center gap-2 py-3.5 text-[17px] font-semibold text-oak"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d={phoneIcon} /></svg>
+    Call
+  </a>
+  <a
+    href="/contact/"
+    class="flex items-center justify-center border-l border-line bg-marigold py-3.5 text-[17px] font-semibold text-loam"
+  >
+    Get a free quote
+  </a>
+</div>

@@ -12,7 +12,7 @@ draft: false
 ---
 French drain installation in Charleston, SC starts with understanding why water behaves the way it does on Lowcountry properties. Flat terrain, sandy soil, a high water table, and an annual rainfall average above 50 inches create persistent drainage challenges — water pools in yards, saturates foundation perimeters, and turns beds into mud. Founded and operated by Timothy Fowler and based at 2124 Parsons Corner, T&T installs french drain systems that solve these problems at the source, with crews who know exactly how Charleston soil drains, and where it doesn't, because we work here every day.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/french-drain-installer-Charleston.webp" alt="French drain installer in Charleston, SC" loading="lazy" />
+<img src="/images/services/french-drain-installer-charleston.webp" alt="French drain installer in Charleston, SC" loading="lazy" />
 
 ## Installation and yard systems
 

@@ -12,7 +12,7 @@ draft: false
 ---
 Irrigation repair in Charleston, SC is one of those things most people don't think about — until brown patches show up, a zone stops firing, or the water bill spikes for no obvious reason. Charleston's sandy Lowcountry soil, high water tables, salt exposure, and long humid summers put unique stress on sprinkler systems: parts wear out faster here, and a system that ran fine in April can develop valve failures or line leaks by midsummer. Founded and operated by Timothy Fowler, T&T is a single-team operation — the same company that maintains your lawn also understands how your zones interact with turf, plantings, and drainage, which matters because irrigation problems rarely exist in isolation.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/sprinkler-repair-Charleston-SC.webp" alt="Sprinkler repair in Charleston, SC" loading="lazy" />
+<img src="/images/services/sprinkler-repair-charleston-sc.webp" alt="Sprinkler repair in Charleston, SC" loading="lazy" />
 
 ## Repair and diagnostics
 

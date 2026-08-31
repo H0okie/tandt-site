@@ -12,7 +12,7 @@ draft: false
 ---
 Commercial landscaping in Charleston, SC requires a company that understands sandy soil, salt exposure, high water tables, and subtropical growing seasons. Founded by Timothy Fowler and operating from 2124 Parsons Corner, T&T provides full-service commercial grounds care for business owners, property managers, and HOAs across the greater Charleston area — handling every phase from recurring maintenance and lawn care to complete design, installation, and hardscape construction. One company, one point of accountability, and an owner who stays involved on every job.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/commercial-landscape-maintenance-Charleston-SC.webp" alt="Commercial landscape maintenance in Charleston, SC" loading="lazy" />
+<img src="/images/services/commercial-landscape-maintenance-charleston-sc.webp" alt="Commercial landscape maintenance in Charleston, SC" loading="lazy" />
 
 ## Maintenance and office landscaping
 

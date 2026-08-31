@@ -12,7 +12,7 @@ draft: false
 ---
 Lawn pest control in Charleston, SC keeps your turf healthy through the Lowcountry's long growing season. Warm temperatures, sandy soil, and high humidity create ideal conditions for grubs, fire ants, chinch bugs, and other destructive insects year-round. Founded by Timothy Fowler on a simple approach — identify the problem, treat it correctly, and follow up to make sure it stays resolved — T&T builds treatments around the specific conditions Charleston properties face, and our crews know the seasonal pest cycles that make timing and product selection matter.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/Lawn-pest-control-in-Charleston-SC.webp" alt="Lawn pest control in Charleston, SC" loading="lazy" />
+<img src="/images/services/lawn-pest-control-in-charleston-sc.webp" alt="Lawn pest control in Charleston, SC" loading="lazy" />
 
 ## Lawn insect control
 

@@ -12,7 +12,7 @@ draft: false
 ---
 New construction landscaping in Charleston, SC starts the moment the builder clears the last piece of equipment off the lot. What's left behind — bare dirt, compacted subsoil, and construction debris mixed into the grade — needs professional attention before any grass, plants, or hardscape can go in. Founded and operated by Timothy Fowler and based at 2124 Parsons Corner, T&T works with homeowners, builders, and developers to turn raw construction sites into finished, functional landscapes, handling every phase from initial grading through final planting and irrigation, built around the sandy soil, high water tables, and salt exposure that define landscaping here.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/developer-landscaping-Charleston-SC.webp" alt="Developer landscaping in Charleston, SC" loading="lazy" />
+<img src="/images/services/developer-landscaping-charleston-sc.webp" alt="Developer landscaping in Charleston, SC" loading="lazy" />
 
 ## New home design and builder packages
 

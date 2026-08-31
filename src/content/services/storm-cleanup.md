@@ -12,7 +12,7 @@ draft: false
 ---
 Storm cleanup in Charleston, SC is a recurring need, not a rare event. Between Atlantic hurricanes, summer thunderstorms, and the occasional nor'easter, Lowcountry properties face storm damage multiple times a year — fallen trees block driveways, broken limbs pile up, and beds get buried under debris. The longer the mess sits, the worse the secondary damage gets. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T's crews respond fast, clear the damage, and restore your landscape — all under one company with direct owner involvement on every job.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/hurricane-cleanup-Charleston-SC-.webp" alt="Hurricane cleanup in Charleston, SC" loading="lazy" />
+<img src="/images/services/hurricane-cleanup-charleston-sc.webp" alt="Hurricane cleanup in Charleston, SC" loading="lazy" />
 
 ## Storm damage and hurricane cleanup
 

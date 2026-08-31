@@ -12,7 +12,7 @@ draft: false
 ---
 Tree trimming in Charleston, SC keeps your property safe, your trees healthy, and your landscape looking sharp through every Lowcountry season. Charleston's subtropical climate, sandy soil, salt air, and active hurricane season demand regular, knowledgeable tree care — live oaks press wide canopies against rooflines, crepe myrtles send up water sprouts every summer, and after a tropical storm damaged limbs threaten structures and people. Founded and operated by Timothy Fowler right here in Charleston, T&T handles everything from routine seasonal pruning to emergency storm cleanup, with direct accountability from the owner.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/tree-maintenance-Charleston-SC.webp" alt="Tree maintenance in Charleston, SC" loading="lazy" />
+<img src="/images/services/tree-maintenance-charleston-sc.webp" alt="Tree maintenance in Charleston, SC" loading="lazy" />
 
 ## Tree trimming service
 

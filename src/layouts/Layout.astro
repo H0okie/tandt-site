@@ -4,6 +4,8 @@ import { site } from "../config/site";
 import { localBusiness } from "../lib/schema";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import MobileActionBar from "../components/MobileActionBar.astro";
+import ReviewsBadge from "../components/ReviewsBadge.astro";
 import Schema from "../components/Schema.astro";
 
 interface Props {
@@ -24,6 +26,7 @@ const pageTitle = title
   ? `${title} | ${site.name}`
   : `${site.name} — Lawn & Landscaping in Charleston, SC`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const gtmId = import.meta.env.PUBLIC_GTM_ID ?? "";
 ---
 
 <!doctype html>
@@ -31,6 +34,31 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {/* §5 Critical FOUC block — MUST be is:inline so Astro neither hoists it
+        (which would land it after the HTML) nor scopes its selectors. It sets
+        the light page canvas before the stylesheet arrives, so there's no flash,
+        and hard-hides [hidden] so the mobile drawer can't paint pre-CSS. */}
+    <style is:inline>
+      html { background: #fbfaf6; color: #1b231c; color-scheme: light; }
+      [hidden] { display: none !important; }
+    </style>
+
+    {/* §5 Match the browser chrome to the light design (else a phone tints its
+        toolbar from its own default until it can sample the page). */}
+    <meta name="theme-color" content="#fbfaf6" />
+    <meta name="color-scheme" content="light" />
+    {/* §5 white-label: a named in-house platform, not a leaked "Astro". */}
+    <meta name="generator" content="TradeUp OS" />
+
+    {/* §1 Google Tag Manager — one container for all marketing/analytics tags.
+        is:inline so Astro doesn't bundle it; inert until PUBLIC_GTM_ID is set. */}
+    {gtmId && (
+      <script is:inline define:vars={{ gtmId }}>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtmId);
+      </script>
+    )}
+
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -69,6 +97,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     )}
   </head>
   <body>
+    {gtmId && (
+      <noscript
+        set:html={`<iframe src="https://www.googletagmanager.com/ns.html?id=${gtmId}" height="0" width="0" style="display:none;visibility:hidden"></iframe>`}
+      />
+    )}
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-oak focus:px-4 focus:py-2 focus:text-cream">
       Skip to content
     </a>
@@ -77,5 +110,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       <slot />
     </main>
     <Footer />
+    <MobileActionBar />
+    <ReviewsBadge />
   </body>
 </html>

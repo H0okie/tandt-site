@@ -12,7 +12,7 @@ draft: false
 ---
 Landscape renovation in Charleston, SC starts with understanding what the Lowcountry demands from a yard — sandy soil, a high water table, salt air, subtropical humidity, and hurricane seasons all shape what thrives and what fails. If your property has overgrown beds, dead turf, poor drainage, or outdated plantings, a renovation can give you a yard that works with Charleston's climate instead of fighting it. Owner-operated by Timothy Fowler, T&T manages every project directly — no subcontractors, no rotating crews, no handoffs.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/landscape-remodel-Charleston-SC.jpg" alt="Landscape remodel in Charleston, SC" loading="lazy" />
+<img src="/images/services/landscape-remodel-charleston-sc.webp" alt="Landscape remodel in Charleston, SC" loading="lazy" />
 
 ## Complete landscape remodel
 

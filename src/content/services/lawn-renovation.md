@@ -12,7 +12,7 @@ draft: false
 ---
 Lawn renovation in Charleston, SC starts with understanding what your property actually needs. Sandy Lowcountry soil, coastal salt exposure, high humidity, and a water table close to the surface break down even well-maintained lawns over time. Whether your yard has bare patches from fungal disease, low spots that flood after every afternoon storm, or grass that's simply given up, a proper renovation can transform the property. T&T is Charleston-based and owner-operated by Timothy Fowler, who is involved on every project from the initial walk-through to the finished result.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-leveling-Charleston-SC.webp" alt="Lawn leveling in Charleston, SC" loading="lazy" />
+<img src="/images/services/lawn-leveling-charleston-sc.webp" alt="Lawn leveling in Charleston, SC" loading="lazy" />
 
 ## Lawn and yard leveling
 

@@ -12,7 +12,7 @@ draft: false
 ---
 T&T Lawn and Landscape provides professional landscape design in Charleston, SC for homeowners and businesses who want outdoor spaces built for the Lowcountry climate. Founded by Timothy Fowler and based at 2124 Parsons Corner, we handle every phase — from the initial concept through installation and long-term maintenance. Charleston's sandy soils, high water tables, salt exposure, and humid subtropical weather demand more than a generic planting plan: a design that works here accounts for drainage, heat tolerance, storm resilience, and seasonal growth specific to this region.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/new-landscape-install-Charleston-SC.webp" alt="New landscape installation in Charleston, SC" loading="lazy" />
+<img src="/images/services/new-landscape-install-charleston-sc.webp" alt="New landscape installation in Charleston, SC" loading="lazy" />
 
 ## Custom plans for every property
 

@@ -12,7 +12,7 @@ draft: false
 ---
 Lawn fertilization in Charleston, SC needs a program built around the Lowcountry — sandy soil, high humidity, salt exposure, and warm-season grasses that behave very differently from cool-season turf up north. A generic schedule from a national brand won't account for how fast nutrients leach through sandy substrates or how St. Augustine and centipede respond to excess nitrogen. Founded by Timothy Fowler, T&T builds fertilization programs around the soil data, grass species, and seasonal patterns that actually exist on your property.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-feeding-service-Charleston.webp" alt="Lawn feeding service in Charleston, SC" loading="lazy" />
+<img src="/images/services/lawn-feeding-service-charleston.webp" alt="Lawn feeding service in Charleston, SC" loading="lazy" />
 
 ## Professional lawn fertilizer service
 

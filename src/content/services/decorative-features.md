@@ -12,7 +12,7 @@ draft: false
 ---
 Decorative landscape features in Charleston, SC do more than improve curb appeal — they define how a property feels and functions. Stone accents, boulder groupings, water features, and garden focal points turn an ordinary yard into something that fits the character of the Lowcountry. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T designs, installs, and maintains these features, working with the sandy soils, high water tables, salt exposure, and subtropical climate that make this region different — local knowledge that matters when choosing materials and placements that need to hold up through hurricane seasons and summer heat.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/decorative-rock-installation-Charleston-SC.webp" alt="Decorative rock installation in Charleston, SC" loading="lazy" />
+<img src="/images/services/decorative-rock-installation-charleston-sc.webp" alt="Decorative rock installation in Charleston, SC" loading="lazy" />
 
 ## Decorative rock and boulder placement
 

@@ -1,0 +1,40 @@
+---
+// §1 house standard: the contact form is a GoHighLevel embed so submissions
+// land straight in the CRM (and trigger whatever workflow is attached).
+//
+// You paste your form's embed URL once into PUBLIC_GHL_FORM_URL (GHL → Sites →
+// Forms → your form → Integrate/Embed → copy the iFrame src). Until that's set,
+// this renders its <slot/> — the existing Web3Forms form — so the contact page
+// is never blank.
+//
+// §5 cross-origin iframe rules honoured here:
+//  • The form lives in another origin, so its fields/colours/fonts CANNOT be
+//    styled from this site — set those in the GoHighLevel form builder.
+//  • No background or min-height on the wrapper "to fix a flash" — you can't
+//    reach inside. Instead we reserve a fixed height matching the form so there's
+//    no layout shift, and let GHL's form_embed.js fine-tune it after load.
+//  • The vendor script is is:inline so Astro doesn't bundle/reorder it.
+const formUrl = import.meta.env.PUBLIC_GHL_FORM_URL ?? "";
+const formHeight = import.meta.env.PUBLIC_GHL_FORM_HEIGHT ?? "760";
+// GHL's resize script matches the iframe to its form by id — derive it from the
+// last path segment of the embed URL (e.g. .../widget/form/AbC123 → AbC123).
+const formId = formUrl.replace(/\/+$/, "").split("/").pop() || "ghl";
+const title = Astro.props.title ?? "Request your free quote";
+---
+
+{formUrl ? (
+  <div class="ghl-embed">
+    <iframe
+      src={formUrl}
+      id={`inline-${formId}`}
+      data-form-id={formId}
+      data-layout="{'id':'INLINE'}"
+      title={title}
+      loading="lazy"
+      style={`width:100%; height:${formHeight}px; border:none; display:block;`}
+    ></iframe>
+    <script is:inline src="https://link.msgsndr.com/js/form_embed.js"></script>
+  </div>
+) : (
+  <slot />
+)}

@@ -12,7 +12,7 @@ draft: false
 ---
 Hedge trimming in Charleston, SC keeps residential and commercial landscapes looking clean, healthy, and intentional. Left untrimmed, Lowcountry hedges grow fast — subtropical humidity and long growing seasons push species like ligustrum, viburnum, and Indian hawthorn into dense, unruly shapes within weeks. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T handles hedge care as part of a complete landscaping operation, so your trimming crew already understands your layout, soil, and plant material — one company, one point of contact, no gaps between services.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/bush-trimming-Charleston.webp" alt="Bush and hedge trimming in Charleston, SC" loading="lazy" />
+<img src="/images/services/bush-trimming-charleston.webp" alt="Bush and hedge trimming in Charleston, SC" loading="lazy" />
 
 ## Shrub trimming and shaping
 

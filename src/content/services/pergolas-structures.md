@@ -12,7 +12,7 @@ draft: false
 ---
 Pergola installation in Charleston, SC gives homeowners and businesses a functional outdoor structure that adds shade, visual appeal, and usable living space. Founded and owner-operated by Timothy Fowler, T&T builds custom pergolas and outdoor structures for residential and commercial clients across the greater Charleston area, handling every phase from the property walk-through and design through permitting, material selection, and construction. Charleston's subtropical climate makes outdoor living possible nearly year-round, and a well-built pergola extends that — delivered under one crew with one point of accountability.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/pergola-builder-Charleston.webp" alt="Pergola builder in Charleston, SC" loading="lazy" />
+<img src="/images/services/pergola-builder-charleston.webp" alt="Pergola builder in Charleston, SC" loading="lazy" />
 
 ## Custom design and backyard construction
 

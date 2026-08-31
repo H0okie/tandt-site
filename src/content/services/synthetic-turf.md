@@ -12,7 +12,7 @@ draft: false
 ---
 Artificial turf installation in Charleston, SC gives homeowners and businesses a green, clean yard without the constant upkeep Lowcountry conditions demand. Between sandy soil, salt air, summer heat, and heavy rain, keeping natural grass looking good here takes serious time and money — synthetic turf removes most of that work while holding up year-round. Founded by Timothy Fowler, T&T handles every step: site prep, grading, base installation, turf layout, infill, and final grooming, on a foundation built for how Lowcountry soil actually drains.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/turf-installer-Charleston-SC.webp" alt="Turf installer in Charleston, SC" loading="lazy" />
+<img src="/images/services/turf-installer-charleston-sc.webp" alt="Turf installer in Charleston, SC" loading="lazy" />
 
 ## Complete synthetic turf installation
 

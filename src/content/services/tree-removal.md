@@ -12,7 +12,7 @@ draft: false
 ---
 Tree removal in Charleston, SC requires more than a chainsaw and a truck. Between the City's tree permit regulations, the Lowcountry's sandy soil, and the risk of property damage from an improperly felled tree, hiring the right crew matters. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T is an owner-operated company that handles every job start to finish — our crews understand high water tables, salt exposure, and hurricane-season urgency, and carry the experience to remove trees safely near homes, fences, and utility lines.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/dead-tree-removal-Charleston-SC.webp" alt="Dead tree removal in Charleston, SC" loading="lazy" />
+<img src="/images/services/dead-tree-removal-charleston-sc.webp" alt="Dead tree removal in Charleston, SC" loading="lazy" />
 
 ## Tree removal and cutting service
 

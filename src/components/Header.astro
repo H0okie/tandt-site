@@ -25,7 +25,7 @@ const phoneIcon =
   <div class="container-tt flex items-center justify-between gap-4 py-3">
     <Logo />
 
-    <!-- Desktop nav (shows at xl; below that the drawer is used) -->
+    {/* Desktop nav (shows at xl; below that the drawer is used) */}
     <nav aria-label="Main" class="hidden xl:block">
       <ul class="flex items-center gap-1">
         {categories.map((cat) => (
@@ -77,7 +77,7 @@ const phoneIcon =
       </ul>
     </nav>
 
-    <!-- Right cluster: phone icon (number on hover/focus) + mobile menu toggle -->
+    {/* Right cluster: phone icon (number on hover/focus) + mobile menu toggle */}
     <div class="flex items-center gap-1">
       <div class="group relative">
         <a href={site.phoneHref} aria-label={`Call ${site.phone}`} class="flex items-center rounded-md p-2 text-oak transition-colors hover:text-turf">
@@ -95,24 +95,29 @@ const phoneIcon =
     </div>
   </div>
 
-  <!-- Mobile drawer (below xl) -->
+  {/* Mobile drawer (below xl) — category groups are native <details> so they
+      collapse with no JS, are keyboard-accessible for free, and (via name=)
+      open one at a time. First child of each group is an "All …" link so the
+      hub page stays reachable when the row itself is a toggle. */}
   <div id="mobile-drawer" data-drawer hidden class="xl:hidden">
     <div class="container-tt max-h-[80vh] overflow-y-auto border-t border-line py-4">
       <ul class="flex flex-col gap-1">
         {categories.map((cat) => (
-          <li class="border-b border-line/70">
-            <button type="button" data-acc-trigger={cat.id} aria-expanded="false" aria-controls={`acc-${cat.id}`} class="flex w-full items-center justify-between py-3 text-left text-[18px] font-semibold text-oak">
-              {cat.data.menuLabel ?? cat.data.title}
-              <svg data-acc-icon width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="transition-transform"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <div id={`acc-${cat.id}`} data-acc-panel={cat.id} hidden class="pb-3">
-              <a href={`/services/${cat.id}/`} class="block py-1.5 text-sm font-semibold text-turf">View all {cat.data.title.toLowerCase()}</a>
-              <ul class="flex flex-col">
-                {servicesByCat.get(cat.id)!.map((s) => (
-                  <li><a href={`/services/${cat.id}/${s.id}/`} class="block py-1.5 text-sm text-stone">{s.data.title}</a></li>
-                ))}
-              </ul>
-            </div>
+          <li>
+            <details name="tt-drawer" class="drawer-acc border-b border-line/70">
+              <summary class="flex items-center justify-between py-3 text-[18px] font-semibold text-oak">
+                {cat.data.menuLabel ?? cat.data.title}
+                <svg data-chevron width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="pb-3">
+                <a href={`/services/${cat.id}/`} class="block py-1.5 text-sm font-semibold text-turf">All {cat.data.title.toLowerCase()} services</a>
+                <ul class="flex flex-col">
+                  {servicesByCat.get(cat.id)!.map((s) => (
+                    <li><a href={`/services/${cat.id}/${s.id}/`} class="block py-1.5 text-sm text-stone">{s.data.title}</a></li>
+                  ))}
+                </ul>
+              </div>
+            </details>
           </li>
         ))}
         <li class="border-b border-line/70"><a href="/about/" class="block py-3 text-[18px] font-semibold text-oak">About</a></li>
@@ -157,9 +162,6 @@ const phoneIcon =
         t.getAttribute("aria-expanded") === "true" ? close(id) : open(id)
       );
       if (canHover) {
-        // pointerenter/leave on the whole item covers both the trigger AND the
-        // panel (the panel is a child of the item). The short close delay lets
-        // the cursor cross the gap between them without the panel vanishing.
         item.addEventListener("pointerenter", () => { cancelClose(); open(id); });
         item.addEventListener("pointerleave", () => scheduleClose(id));
       }
@@ -167,22 +169,17 @@ const phoneIcon =
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeAll(); });
     document.addEventListener("click", (e) => { if (!header.contains(e.target as Node)) closeAll(); });
 
+    // Mobile drawer: burger toggles the whole panel. The <details> groups inside
+    // handle their own open/close natively. Track drawer-open on <html> so the
+    // sticky action bar can hide itself while the drawer is showing.
+    const root = document.documentElement;
     const drawerToggle = header.querySelector("[data-drawer-toggle]");
     const drawer = header.querySelector("[data-drawer]");
-    drawerToggle?.addEventListener("click", () => {
-      const isHidden = drawer?.hasAttribute("hidden");
-      if (isHidden) { drawer?.removeAttribute("hidden"); drawerToggle.setAttribute("aria-expanded", "true"); }
-      else { drawer?.setAttribute("hidden", ""); drawerToggle.setAttribute("aria-expanded", "false"); }
-    });
-    header.querySelectorAll("[data-acc-trigger]").forEach((t) => {
-      t.addEventListener("click", () => {
-        const id = (t as HTMLElement).dataset.accTrigger!;
-        const panel = header.querySelector(`[data-acc-panel="${id}"]`);
-        const icon = t.querySelector("[data-acc-icon]");
-        const isOpen = !panel?.hasAttribute("hidden");
-        if (isOpen) { panel?.setAttribute("hidden", ""); t.setAttribute("aria-expanded", "false"); (icon as HTMLElement)?.style.removeProperty("transform"); }
-        else { panel?.removeAttribute("hidden"); t.setAttribute("aria-expanded", "true"); (icon as HTMLElement)?.style.setProperty("transform", "rotate(180deg)"); }
-      });
-    });
+    const setDrawer = (openIt: boolean) => {
+      if (openIt) { drawer?.removeAttribute("hidden"); drawerToggle?.setAttribute("aria-expanded", "true"); root.classList.add("drawer-open"); }
+      else { drawer?.setAttribute("hidden", ""); drawerToggle?.setAttribute("aria-expanded", "false"); root.classList.remove("drawer-open"); }
+    };
+    drawerToggle?.addEventListener("click", () => setDrawer(drawer?.hasAttribute("hidden") ?? false));
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && drawer && !drawer.hasAttribute("hidden")) setDrawer(false); });
   }
 </script>

@@ -12,7 +12,7 @@ draft: false
 ---
 Yard drainage in Charleston, SC is one of the most common and most overlooked property issues in the Lowcountry. A high water table, flat coastal terrain, and sandy soil layered over clay create conditions where water has nowhere to go after heavy rain — puddles sit for days, mulch washes out, foundation walls stay damp, and hurricane season brings accelerated erosion to properties without a plan. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T designs, installs, and maintains yard drainage systems that move water off your property efficiently, protecting your home, your landscape investment, and your turf.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/wet-yard-solutions-Charleston.webp" alt="Wet yard solutions in Charleston, SC" loading="lazy" />
+<img src="/images/services/wet-yard-solutions-charleston.webp" alt="Wet yard solutions in Charleston, SC" loading="lazy" />
 
 ## Design, wet-yard fixes, and standing water
 

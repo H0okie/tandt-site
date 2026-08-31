@@ -12,7 +12,7 @@ draft: false
 ---
 Seasonal planting in Charleston, SC keeps residential and commercial properties looking sharp through every shift in the Lowcountry calendar. Charleston's subtropical climate — sandy soil, salt air, a high water table, and humidity that stresses the wrong plants — demands more than dropping annuals into the ground twice a year. It requires knowing what grows here, when to plant it, and how to prepare beds so color lasts. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T's crews work exclusively in the Lowcountry and select plant material based on real conditions, not catalog recommendations from another climate zone.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/spring-planting-Charleston-SC.jpg" alt="Spring planting in Charleston, SC" loading="lazy" />
+<img src="/images/services/spring-planting-charleston-sc.webp" alt="Spring planting in Charleston, SC" loading="lazy" />
 
 ## Seasonal flower planting and color installation
 

@@ -12,7 +12,7 @@ draft: false
 ---
 T&T provides professional water feature installation in Charleston, SC for residential and commercial properties throughout the Lowcountry — a fountain at your front entry, a pondless waterfall in the backyard, or a custom stone feature built into an outdoor living space, with design, installation, and ongoing maintenance handled by our team. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T builds around the specific conditions here: sandy soil, high water tables, salt exposure, and a subtropical climate that keeps outdoor spaces in use nearly year-round.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/backyard-water-feature-Charleston.webp" alt="Backyard water feature in Charleston, SC" loading="lazy" />
+<img src="/images/services/backyard-water-feature-charleston.webp" alt="Backyard water feature in Charleston, SC" loading="lazy" />
 
 ## Fountains and backyard water features
 

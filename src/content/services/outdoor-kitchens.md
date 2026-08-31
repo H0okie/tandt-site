@@ -12,7 +12,7 @@ draft: false
 ---
 Outdoor kitchen installation in Charleston, SC starts with understanding the Lowcountry — its sandy soil, salt air, high humidity, and the way people here actually use their backyards. Founded by Timothy Fowler, T&T builds custom outdoor kitchens for homeowners and commercial owners across the greater Charleston area, handling every step from design and utility coordination through construction and appliance hookup. Charleston's climate allows year-round outdoor cooking, which also means your kitchen needs materials and methods that hold up against coastal weather, UV exposure, and seasonal storms.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/outdoor-kitchen-builder-Charleston-SC.webp" alt="Outdoor kitchen builder in Charleston, SC" loading="lazy" />
+<img src="/images/services/outdoor-kitchen-builder-charleston-sc.webp" alt="Outdoor kitchen builder in Charleston, SC" loading="lazy" />
 
 ## Custom design-build and grill islands
 

@@ -1,0 +1,92 @@
+name: Fetch images
+
+# TradeUp OS §8 — the image robot.
+# Reads tools/image-manifest.txt (one "<source-url> | <dest-path>" per line),
+# downloads anything not already present, REJECTS HTML masquerading as an image
+# (WordPress serves styled 404s with a 200 status, which once poisoned a file),
+# normalizes each to WebP capped at MAX_WIDTH, commits, and triggers a deploy.
+#
+# Run it from the GitHub UI: Actions -> Fetch images -> Run workflow.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/image-manifest.txt"      # re-run automatically when the list changes
+
+permissions:
+  contents: write                        # allow the robot to commit fetched images
+
+env:
+  MANIFEST: tools/image-manifest.txt
+  MAX_WIDTH: "1600"                       # retina cap for the ~800px hero column; only shrinks
+  WEBP_QUALITY: "82"
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install image tooling
+        run: sudo apt-get update && sudo apt-get install -y webp imagemagick
+
+      - name: Fetch, validate, and normalize
+        run: |
+          set -uo pipefail
+          added=0; skipped=0; failed=0
+          while IFS= read -r line || [ -n "$line" ]; do
+            # skip blanks and comments
+            case "$line" in ''|\#*) continue;; esac
+            src="${line%%|*}";  src="$(echo "$src" | xargs)"
+            dest="${line#*|}";  dest="$(echo "$dest" | xargs)"
+            [ -z "$src" ] || [ -z "$dest" ] && continue
+
+            if [ -f "$dest" ]; then
+              echo "  = present  $dest"; skipped=$((skipped+1)); continue
+            fi
+            mkdir -p "$(dirname "$dest")"
+            tmp="$(mktemp)"
+
+            # download (follow redirects, real UA, fail on 4xx/5xx)
+            if ! curl -fsSL --max-time 60 -A "TradeUpOS-image-robot" "$src" -o "$tmp"; then
+              echo "  ✗ DOWNLOAD FAILED  $src"; failed=$((failed+1)); rm -f "$tmp"; continue
+            fi
+
+            # reject HTML masquerading as an image (the WordPress 200-on-404 trap)
+            kind="$(file -b --mime-type "$tmp")"
+            case "$kind" in
+              image/*) : ;;
+              *) echo "  ✗ NOT AN IMAGE ($kind)  $src"; failed=$((failed+1)); rm -f "$tmp"; continue;;
+            esac
+
+            # normalize to WebP, capped at MAX_WIDTH (the '>' only shrinks, never upscales)
+            if command -v cwebp >/dev/null && [ "$kind" = "image/webp" ]; then
+              # already webp: still enforce the width cap via ImageMagick, re-encode webp
+              convert "$tmp" -resize "${MAX_WIDTH}x>" -quality "${WEBP_QUALITY}" "$dest"
+            else
+              convert "$tmp" -resize "${MAX_WIDTH}x>" -quality "${WEBP_QUALITY}" "$dest"
+            fi
+            rm -f "$tmp"
+            echo "  + added    $dest"; added=$((added+1))
+          done < "$MANIFEST"
+
+          echo ""
+          echo "Robot summary: added=$added  present=$skipped  failed=$failed"
+          # fail the run if any image could not be fetched — a missing hero must not pass silently
+          if [ "$failed" -gt 0 ]; then
+            echo "::error::$failed image(s) failed — see log above."
+            exit 1
+          fi
+
+      - name: Commit fetched images
+        run: |
+          if [ -n "$(git status --porcelain public/images)" ]; then
+            git config user.name  "tradeup-image-robot"
+            git config user.email "actions@users.noreply.github.com"
+            git add public/images
+            git commit -m "robot: fetch + normalize images from manifest"
+            git push
+          else
+            echo "No new images to commit."
+          fi

@@ -1,0 +1,33 @@
+---
+// §1 house standard: real Google reviews via Trustindex, replacing the manual
+// testimonials block. Paste your in-page widget's loader URL into
+// PUBLIC_TRUSTINDEX_WIDGET_SRC (Trustindex → your widget → Embed → copy the
+// <script> src, e.g. https://cdn.trustindex.io/loader.js?XXXX). Until it's set,
+// this renders its <slot/> — the existing Testimonials section — so the homepage
+// keeps a reviews block either way.
+//
+// §5: the loader is is:inline (Astro must not bundle a third-party script), and
+// the container reserves height + fades in (.ti-reserve in global.css) so the
+// page doesn't jump when the widget injects. The widget's own look is set in the
+// Trustindex builder — it's their DOM, not ours to style.
+import SectionHeading from "./SectionHeading.astro";
+const widgetSrc = import.meta.env.PUBLIC_TRUSTINDEX_WIDGET_SRC ?? "";
+---
+
+{widgetSrc ? (
+  <section class="bg-limestone">
+    <div class="container-tt py-20">
+      <SectionHeading
+        eyebrow="Reviews"
+        title="What Charleston homeowners say"
+        align="center"
+        class="mx-auto max-w-xl"
+      />
+      <div class="ti-reserve mt-12">
+        <script is:inline defer async src={widgetSrc}></script>
+      </div>
+    </div>
+  </section>
+) : (
+  <slot />
+)}

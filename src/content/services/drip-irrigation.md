@@ -12,7 +12,7 @@ draft: false
 ---
 Drip irrigation in Charleston, SC gives homeowners and businesses a smarter way to water landscapes in a climate that's equal parts generous and demanding. The Lowcountry's sandy soil drains quickly, summer temperatures push past 90°F for months, and salt exposure stresses plants that aren't getting consistent moisture. A well-designed drip system puts water exactly where roots need it — slowly, efficiently, and without the waste of traditional sprinklers. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T designs, installs, and maintains drip systems built around the soil, plant material, and drainage patterns unique to this area.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/drip-system-Charleston.webp" alt="Drip irrigation system in Charleston, SC" loading="lazy" />
+<img src="/images/services/drip-system-charleston.webp" alt="Drip irrigation system in Charleston, SC" loading="lazy" />
 
 ## Installation and custom design
 

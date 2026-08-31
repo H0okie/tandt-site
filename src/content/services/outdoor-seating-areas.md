@@ -12,7 +12,7 @@ draft: false
 ---
 If you're looking for outdoor seating area installation in Charleston, SC, T&T designs and builds hardscape seating spaces that hold up to the Lowcountry's heat, humidity, and coastal weather. Founded by Timothy Fowler, our crew handles every step from the property walkthrough and design layout to material selection, construction, and finished landscaping. Charleston's sandy soil, high water table, and salt-air exposure create specific challenges — a seating area that looks great on paper can fail within a season if drainage, base prep, and materials don't account for local conditions. We've built patios, seating walls, and lounges across West Ashley, Mount Pleasant, James Island, and Daniel Island.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/outdoor-seating-area-installation-Charleston-SC.webp" alt="Outdoor seating area installation in Charleston, SC" loading="lazy" />
+<img src="/images/services/outdoor-seating-area-installation-charleston-sc.webp" alt="Outdoor seating area installation in Charleston, SC" loading="lazy" />
 
 ## Backyard seating and patio construction
 

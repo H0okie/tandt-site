@@ -12,7 +12,7 @@ draft: false
 ---
 Sprinkler system installation in Charleston, SC starts with understanding the ground beneath your feet. Sandy Lowcountry soil drains fast, so water moves through the root zone before most turf grasses can absorb it — add salt exposure, a high water table that shifts with the tides, and summer heat above 90°F for weeks straight, and you need a properly designed system, not a few pop-up heads on a timer. Founded and operated by Timothy Fowler, T&T designs systems around the specific conditions on your property — soil type, sun, plant material, grade, and water pressure — so every zone delivers the right amount of water exactly where it's needed.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/irrigation-company-Charleston.webp" alt="Irrigation company in Charleston, SC" loading="lazy" />
+<img src="/images/services/irrigation-company-charleston.webp" alt="Irrigation company in Charleston, SC" loading="lazy" />
 
 ## Residential and commercial installation
 

@@ -12,7 +12,7 @@ draft: false
 ---
 HOA landscaping in Charleston, SC requires a company that understands both community standards and Lowcountry growing conditions. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T provides full-service HOA maintenance, design, and installation across the greater Charleston area — serving as a single point of accountability for boards that need reliable grounds care, from weekly mowing and seasonal plantings to irrigation management and tree service. Our crews know the sandy soils, salt air, high water tables, and subtropical humidity that shape every landscape decision here.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/HOA-grounds-maintenance-Charleston.webp" alt="HOA grounds maintenance in Charleston, SC" loading="lazy" />
+<img src="/images/services/hoa-grounds-maintenance-charleston.webp" alt="HOA grounds maintenance in Charleston, SC" loading="lazy" />
 
 ## Maintenance, grounds care, and lawn care
 

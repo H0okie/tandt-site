@@ -1,0 +1,31 @@
+---
+// §1 floating Trustindex review badge, site-wide. Paste the badge widget's
+// loader URL into PUBLIC_TRUSTINDEX_BADGE_SRC.
+//
+// §5: third-party widgets are gated behind a matchMedia check so they only load
+// where they belong. The badge is desktop-only here — on phones it would sit on
+// top of the sticky call/quote action bar and crowd a small screen. We inject
+// the loader from JS (not a static <script src>) precisely so the matchMedia
+// gate can decide, and only ever load it once.
+const badgeSrc = import.meta.env.PUBLIC_TRUSTINDEX_BADGE_SRC ?? "";
+---
+
+{badgeSrc && (
+  <script is:inline define:vars={{ badgeSrc }}>
+    (function () {
+      var mq = window.matchMedia("(min-width: 1024px)");
+      var loaded = false;
+      function load() {
+        if (loaded || !mq.matches) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = badgeSrc;
+        s.defer = true;
+        s.async = true;
+        document.body.appendChild(s);
+      }
+      load();
+      if (!loaded && mq.addEventListener) mq.addEventListener("change", load);
+    })();
+  </script>
+)}

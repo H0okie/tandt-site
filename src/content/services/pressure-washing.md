@@ -12,7 +12,7 @@ draft: false
 ---
 T&T provides professional pressure washing in Charleston, SC for residential and commercial properties throughout the Lowcountry. Charleston's humid subtropical climate, salt air, and frequent rain create ideal conditions for algae, mildew, and dirt buildup on driveways, siding, patios, and commercial facades — and left untreated, these contaminants stain surfaces, break down materials, and reduce curb appeal fast. Founded and operated by Timothy Fowler out of the company's headquarters at 2124 Parsons Corner, T&T brings the same accountability and hands-on approach to pressure washing it applies to every service, with crews who know exactly what Lowcountry weather does to outdoor surfaces.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/patio-cleaning-Charleston-SC.webp" alt="Patio cleaning in Charleston, SC" loading="lazy" />
+<img src="/images/services/patio-cleaning-charleston-sc.webp" alt="Patio cleaning in Charleston, SC" loading="lazy" />
 
 ## Residential washing and driveways
 

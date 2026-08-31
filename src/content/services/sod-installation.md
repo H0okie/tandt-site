@@ -12,7 +12,7 @@ draft: false
 ---
 Sod installation in Charleston, SC gives homeowners and business owners the fastest path to a green, established lawn — often in a single day. But the Lowcountry's sandy soil, high water table, and salt-heavy air demand more than just rolling out grass. Founded and owner-operated by Timothy Fowler, T&T builds its sod installation around the specific challenges Charleston properties face — from soil grading and drainage correction to grass selection and post-install care, handled on-site with no subcontractors.
 
-<img src="https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/sod-grass-install-charlestone-SC.webp" alt="Sod and grass installation in Charleston, SC" loading="lazy" />
+<img src="/images/services/sod-grass-install-charlestone-sc.webp" alt="Sod and grass installation in Charleston, SC" loading="lazy" />
 
 ## Full-service residential and commercial sod installation
 
