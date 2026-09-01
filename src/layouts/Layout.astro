@@ -18,7 +18,7 @@ interface Props {
 const {
   title,
   description = site.description,
-  image = "https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/commercial-landscape-maintenance-Charleston-SC.webp",
+  image = "/images/site/commercial-landscape-maintenance-charleston-sc.webp",
   schema = [],
 } = Astro.props;
 
@@ -27,6 +27,7 @@ const pageTitle = title
   : `${site.name} — Lawn & Landscaping in Charleston, SC`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const gtmId = import.meta.env.PUBLIC_GTM_ID ?? "";
+const ogImage = new URL(image, Astro.site).href; // resolve local path to absolute for social cards
 ---
 
 <!doctype html>
@@ -68,11 +69,11 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID ?? "";
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image" content={ogImage} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

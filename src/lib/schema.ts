@@ -1,8 +1,7 @@
 import { site } from "../config/site";
 
 const businessId = `${site.url}/#business`;
-const ogImage =
-  "https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/commercial-landscape-maintenance-Charleston-SC.webp";
+const ogImage = `${site.url}/images/site/commercial-landscape-maintenance-charleston-sc.webp`;
 
 // Site-wide LocalBusiness — the anchor every other node references by @id.
 export function localBusiness() {

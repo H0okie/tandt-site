@@ -41,3 +41,16 @@ https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/tree-stump-grinding
 https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/turf-installer-Charleston-SC.webp | public/images/services/turf-installer-charleston-sc.webp
 https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/weed-control-Charleston-SC.webp | public/images/services/weed-control-charleston-sc.webp
 https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/wet-yard-solutions-Charleston.webp | public/images/services/wet-yard-solutions-charleston.webp
+
+# --- Homepage + projects gallery + social/schema image (added: were still hotlinked) ---
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/commercial-landscape-maintenance-Charleston-SC.webp | public/images/site/commercial-landscape-maintenance-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/turf-installer-Charleston-SC.webp | public/images/site/turf-installer-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/backyard-fire-pit-Charleston-SC.webp | public/images/site/backyard-fire-pit-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/decorative-rock-installation-Charleston-SC.webp | public/images/site/decorative-rock-installation-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/About-TT-lawn-and-Landscape.webp | public/images/site/about-tt-lawn-and-landscape.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/landscape-renovation-Charleston-SC-1.webp | public/images/site/landscape-renovation-charleston-sc-1.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/drainage-trench-install-Charleston.webp | public/images/site/drainage-trench-install-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/outdoor-structure-builder-Charleston-SC.webp | public/images/site/outdoor-structure-builder-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/seasonal-flower-planting-Charleston.jpg | public/images/site/seasonal-flower-planting-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/flower-bed-installation-Charleston-SC.webp | public/images/site/flower-bed-installation-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/garden-bed-installation-Charleston-SC.webp | public/images/site/garden-bed-installation-charleston-sc.webp
