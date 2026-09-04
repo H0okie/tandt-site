@@ -1,7 +1,7 @@
 ---
 title: Drip Irrigation
 category: irrigation
-heroImage: "/images/services/drip-system-charleston.webp"
+heroImage: /images/services/drip-system-charleston.webp
 order: 3
 shortDescription: "Water-saving drip and micro-irrigation that delivers moisture straight to the root zone: 30-50% less water, healthier plants, fewer fungal problems."
 features:
@@ -9,14 +9,24 @@ features:
   - Micro-sprayers, bubblers, and emitters
   - Low-volume delivery sandy soil can absorb
   - Emitter cleaning, repair, and maintenance
+whyChooseTitle: Why choose T&T for drip irrigation
+whyChoose:
+  - title: Owner-operated, start to finish.
+    description: You talk to someone who knows your property and plan, not rotating account managers.
+  - title: Built for Lowcountry conditions.
+    description: Programs built around sandy soil, salt air, high water tables, and storms, not a franchise template.
+  - title: One company, every service.
+    description: Your drip system gets designed alongside your planting plan, not as an afterthought by a separate contractor.
+  - title: Clear pricing, maintenance built in.
+    description: An itemized proposal up front, and recurring contracts so the system performs like day one through every season.
 faqs:
-  - question: "Why is drip irrigation important in Charleston?"
-    answer: "It delivers water slowly and directly to roots, reducing evaporation and runoff. In sandy soil that drains quickly and summers above 90°F, drip prevents plants from drying out and wastes far less water than sprinklers, lowering your bills."
-  - question: "How much water can it save?"
+  - question: Why is drip irrigation important in Charleston?
+    answer: It delivers water slowly and directly to roots, reducing evaporation and runoff. In sandy soil that drains quickly and summers above 90°F, drip prevents plants from drying out and wastes far less water than sprinklers, lowering your bills.
+  - question: How much water can it save?
     answer: "Micro and drip systems use 30–50% less water than conventional sprinklers: the slow delivery rate lets sandy soil absorb water before it drains past the root zone."
-  - question: "Why does drip reduce fungal disease?"
-    answer: "It keeps water off foliage by delivering moisture to the soil. In the Lowcountry's humid environment wet leaves promote fungal growth, so watering only the soil reduces disease risk while improving plant health."
-  - question: "How often does a drip system need maintenance?"
+  - question: Why does drip reduce fungal disease?
+    answer: It keeps water off foliage by delivering moisture to the soil. In the Lowcountry's humid environment wet leaves promote fungal growth, so watering only the soil reduces disease risk while improving plant health.
+  - question: How often does a drip system need maintenance?
     answer: "Regular seasonal inspections: emitters clog, tubing cracks from UV, and settling soil shifts emitter positions. Our maintenance contracts include emitter cleaning, line repair, filter changes, and timer adjustments to keep systems efficient year-round."
 draft: false
 ---
@@ -37,10 +47,3 @@ Micro irrigation uses low-flow micro-sprayers, micro-bubblers, and drip emitters
 ## Repair and maintenance
 
 Drip systems need regular attention: emitters clog from mineral buildup in Charleston's water, tubing cracks after years of UV, rodents chew lines, and settling soil shifts emitters away from roots. We provide seasonal inspections, emitter cleaning and replacement, line repair, filter changes, and timer reprogramming, and adjust systems as your landscape matures, since what a new planting needed at install changes as roots expand.
-
-## Why choose T&T for drip irrigation
-
-- **Owner-operated, start to finish.** You talk to someone who knows your property and plan, not rotating account managers.
-- **Built for Lowcountry conditions.** Programs built around sandy soil, salt air, high water tables, and storms, not a franchise template.
-- **One company, every service.** Your drip system gets designed alongside your planting plan, not as an afterthought by a separate contractor.
-- **Clear pricing, maintenance built in.** An itemized proposal up front, and recurring contracts so the system performs like day one through every season.

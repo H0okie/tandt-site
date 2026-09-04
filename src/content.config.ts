@@ -32,6 +32,10 @@ const services = defineCollection({
     heroImage: z.string().optional(),
     // Bullet-point selling points for the service page
     features: z.array(z.string()).default([]),
+    // "Why choose T&T for X" section, rendered as its own colored band
+    // (see ServiceWhyUs.astro) instead of living inline in the prose.
+    whyChooseTitle: z.string().optional(),
+    whyChoose: z.array(z.object({ title: z.string(), description: z.string() })).default([]),
     // Per-service FAQs, rendered as an accordion (see ServiceFaq.astro)
     faqs: z.array(z.object({ question: z.string(), answer: z.string() })).default([]),
     // Set true to keep a page out of nav/sitemap while you draft it

@@ -1,7 +1,7 @@
 ---
 title: Flower Bed Installation
 category: landscaping
-heroImage: "/images/services/garden-bed-installation-charleston-sc.webp"
+heroImage: /images/services/garden-bed-installation-charleston-sc.webp
 order: 5
 shortDescription: Custom flower and garden bed installation designed and built for Lowcountry soil, salt, and heat, from soil prep through planting and mulch.
 features:
@@ -9,15 +9,25 @@ features:
   - Soil testing and organic amendment
   - Salt-tolerant selections near the coast
   - Annual rotations and perennial beds
+whyChooseTitle: Why choose T&T for flower bed installation
+whyChoose:
+  - title: Owner-operated by Timothy Fowler.
+    description: "Involved from the initial walk through final installation: one point of accountability."
+  - title: Charleston-based, not a franchise.
+    description: Local knowledge of soil, drainage, and which varieties actually perform here long-term.
+  - title: Everything under one roof.
+    description: Design, soil prep, planting, mulching, irrigation coordination, and maintenance.
+  - title: Itemized, transparent proposals.
+    description: Plant species, quantities, amendments, and labor spelled out before work begins.
 faqs:
-  - question: "How do you prepare soil for flower beds in Charleston?"
-    answer: "We test pH, amend with organic matter and compost to improve water retention, and adjust for slightly acidic Lowcountry soils, the foundation for strong root establishment in sandy native soil."
-  - question: "What's the best time to plant annual flowers here?"
-    answer: "Warm-season annuals (petunias, zinnias, lantana) plant from late March through May; cool-season annuals (pansies, snapdragons) go in from October through early December."
-  - question: "Are perennials better than annuals for Charleston properties?"
-    answer: "Perennial beds offer long-term structure and reduce yearly replanting costs. Lowcountry perennials like knockout roses, daylilies, and muhly grass tolerate the heat and humidity while providing staggered blooms."
-  - question: "How does salt exposure affect design near the harbor?"
-    answer: "Coastal properties need salt-tolerant selections, which we factor in during design; inland areas like West Ashley or Summerville allow wider plant variety."
+  - question: How do you prepare soil for flower beds in Charleston?
+    answer: We test pH, amend with organic matter and compost to improve water retention, and adjust for slightly acidic Lowcountry soils, the foundation for strong root establishment in sandy native soil.
+  - question: What's the best time to plant annual flowers here?
+    answer: Warm-season annuals (petunias, zinnias, lantana) plant from late March through May; cool-season annuals (pansies, snapdragons) go in from October through early December.
+  - question: Are perennials better than annuals for Charleston properties?
+    answer: Perennial beds offer long-term structure and reduce yearly replanting costs. Lowcountry perennials like knockout roses, daylilies, and muhly grass tolerate the heat and humidity while providing staggered blooms.
+  - question: How does salt exposure affect design near the harbor?
+    answer: Coastal properties need salt-tolerant selections, which we factor in during design; inland areas like West Ashley or Summerville allow wider plant variety.
 draft: false
 ---
 Flower bed installation in Charleston, SC starts with understanding the land you're working with. Sandy soil, a high water table, salt air from the coast, and intense summer heat all shape what thrives here. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T designs and installs flower beds built specifically for Lowcountry conditions, handling every step from design and soil prep through planting, mulching, and ongoing seasonal care. Our crews live and work here, so we know which plants perform and which struggle by August.
@@ -37,10 +47,3 @@ Charleston's native soil is predominantly sandy and drains quickly, an advantage
 ## Annual and perennial plantings
 
 Annuals deliver bold, immediate color: warm-season varieties like petunias, zinnias, lantana, and pentas plant from late March through May; cool-season pansies, snapdragons, and ornamental kale go in from October through early December. We offer one-time seasonal color installs and recurring annual rotation programs with priority scheduling. Perennial beds provide long-term structure and reduce replanting costs: we install proven Lowcountry perennials like knockout roses, daylilies, black-eyed Susans, muhly grass, and Confederate jasmine, layered by mature height and bloom timing for staggered interest from spring through fall.
-
-## Why choose T&T for flower bed installation
-
-- **Owner-operated by Timothy Fowler.** Involved from the initial walk through final installation: one point of accountability.
-- **Charleston-based, not a franchise.** Local knowledge of soil, drainage, and which varieties actually perform here long-term.
-- **Everything under one roof.** Design, soil prep, planting, mulching, irrigation coordination, and maintenance.
-- **Itemized, transparent proposals.** Plant species, quantities, amendments, and labor spelled out before work begins.

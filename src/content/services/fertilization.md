@@ -1,7 +1,7 @@
 ---
 title: Fertilization
 category: lawn-care
-heroImage: "/images/services/lawn-feeding-service-charleston.webp"
+heroImage: /images/services/lawn-feeding-service-charleston.webp
 order: 5
 shortDescription: Soil-test-based, slow-release fertilization programs built for Charleston's warm-season grasses and sandy Lowcountry soils.
 features:
@@ -9,12 +9,22 @@ features:
   - Programs built on a Clemson soil test
   - 3–4 timed applications per year
   - Matched to your grass species and pH
+whyChooseTitle: Why choose T&T for lawn fertilization
+whyChoose:
+  - title: Owner-operated.
+    description: "Timothy Fowler stays involved from the first walk through ongoing seasonal treatments: no call center or rotating account managers."
+  - title: Local knowledge.
+    description: We know the drainage on James Island, the sandy substrates in West Ashley, and the salt-wind exposure on Isle of Palms.
+  - title: Full-service in-house.
+    description: "If the lawn needs aeration first, or a drainage problem is washing nutrients away, we handle it: no coordinating three vendors."
+  - title: Slow-release products and itemized pricing.
+    description: Better for the turf and Charleston's waterways, with no vague packages.
 faqs:
-  - question: "When is the best time to fertilize a lawn in Charleston?"
-    answer: "Start warm-season grasses in early spring, once soil temperatures consistently reach 65°F. Most lawns benefit from 3–4 applications from March through September, with a final feeding in early fall before dormancy."
-  - question: "What type of fertilizer works best here?"
-    answer: "Slow-release granular fertilizers with a balanced N-P-K ratio. Sandy Lowcountry soils lose nutrients quickly, so slow-release formulas feed gradually and reduce runoff into local waterways."
-  - question: "Do I need a soil test before fertilizing?"
+  - question: When is the best time to fertilize a lawn in Charleston?
+    answer: Start warm-season grasses in early spring, once soil temperatures consistently reach 65°F. Most lawns benefit from 3–4 applications from March through September, with a final feeding in early fall before dormancy.
+  - question: What type of fertilizer works best here?
+    answer: Slow-release granular fertilizers with a balanced N-P-K ratio. Sandy Lowcountry soils lose nutrients quickly, so slow-release formulas feed gradually and reduce runoff into local waterways.
+  - question: Do I need a soil test before fertilizing?
     answer: "We strongly recommend one: it tells us pH, organic matter, and existing nutrient levels so the program is built on real data rather than guesswork."
 draft: false
 ---
@@ -46,10 +56,3 @@ For Mount Pleasant and other coastal properties, we raise potassium to improve s
 ## Matched to warm-season grasses
 
 Charleston lawns are almost all warm-season: St. Augustine, centipede, Bermuda, and Zoysia. St. Augustine does well with 2–4 lbs of nitrogen per 1,000 sq ft annually; centipede needs far less (over-fertilizing it is one of the fastest ways to kill it); Bermuda benefits from higher nitrogen, which is why it's common on commercial and athletic turf. We match product, rate, and timing to the grass on your property.
-
-## Why choose T&T for lawn fertilization
-
-- **Owner-operated.** Timothy Fowler stays involved from the first walk through ongoing seasonal treatments: no call center or rotating account managers.
-- **Local knowledge.** We know the drainage on James Island, the sandy substrates in West Ashley, and the salt-wind exposure on Isle of Palms.
-- **Full-service in-house.** If the lawn needs aeration first, or a drainage problem is washing nutrients away, we handle it: no coordinating three vendors.
-- **Slow-release products and itemized pricing.** Better for the turf and Charleston's waterways, with no vague packages.

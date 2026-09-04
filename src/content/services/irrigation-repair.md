@@ -1,7 +1,7 @@
 ---
 title: Irrigation Repair
 category: irrigation
-heroImage: "/images/services/sprinkler-repair-charleston-sc.webp"
+heroImage: /images/services/sprinkler-repair-charleston-sc.webp
 order: 2
 shortDescription: Fast irrigation diagnostics and repair (broken heads, leaking valves, corroded solenoids, and wiring faults) from the team that knows your whole yard.
 features:
@@ -9,15 +9,25 @@ features:
   - Full zone-by-zone system diagnostics
   - Common parts (Hunter, Rain Bird, Irritrol) stocked
   - Priority scheduling for urgent leaks
+whyChooseTitle: Why choose T&T for irrigation repair
+whyChoose:
+  - title: Owner-involved on every job.
+    description: The person who scopes the work is connected to the person who completes it.
+  - title: Lowcountry knowledge in every repair.
+    description: "Sandy soil means longer cycles, salt air corrodes metal fittings faster, and high water tables shift valve boxes: we account for all of it."
+  - title: Irrigation plus lawn care under one roof.
+    description: "If turf is declining, we can tell whether it's coverage, soil, or drainage: one company, one diagnosis, one solution."
+  - title: Transparent pricing, fast scheduling.
+    description: Itemized estimates with no vague packages, and priority response for mainline leaks or stuck valves that waste thousands of gallons.
 faqs:
-  - question: "What's the most common irrigation problem here?"
+  - question: What's the most common irrigation problem here?
     answer: "Broken or clogged sprinkler heads top the list: sandy soil shifts over time and mower strikes are frequent. Valve failures and controller malfunctions are close behind, especially on systems older than ten years."
-  - question: "Can a plumber fix my sprinkler system?"
-    answer: "A plumber can handle supply connections and backflow devices, but irrigation involves specialized components (zone valves, solenoids, controllers, drip emitters, and precise head spacing) that a dedicated irrigation technician will diagnose and repair faster and more accurately."
-  - question: "When is the best time to schedule repair?"
-    answer: "Early spring (March–April) is ideal, giving the system time to be fully operational before the May–June peak. That said, we handle repairs year-round since leaks and failures don't follow a calendar."
-  - question: "Do you offer maintenance plans?"
-    answer: "Yes, recurring contracts include seasonal inspections, head adjustments, controller reprogramming, and efficiency checks that catch small problems before they become expensive and help lower your water bill."
+  - question: Can a plumber fix my sprinkler system?
+    answer: A plumber can handle supply connections and backflow devices, but irrigation involves specialized components (zone valves, solenoids, controllers, drip emitters, and precise head spacing) that a dedicated irrigation technician will diagnose and repair faster and more accurately.
+  - question: When is the best time to schedule repair?
+    answer: Early spring (March–April) is ideal, giving the system time to be fully operational before the May–June peak. That said, we handle repairs year-round since leaks and failures don't follow a calendar.
+  - question: Do you offer maintenance plans?
+    answer: Yes, recurring contracts include seasonal inspections, head adjustments, controller reprogramming, and efficiency checks that catch small problems before they become expensive and help lower your water bill.
 draft: false
 ---
 Irrigation repair in Charleston, SC is one of those things most people don't think about, until brown patches show up, a zone stops firing, or the water bill spikes for no obvious reason. Charleston's sandy Lowcountry soil, high water tables, salt exposure, and long humid summers put unique stress on sprinkler systems: parts wear out faster here, and a system that ran fine in April can develop valve failures or line leaks by midsummer. Founded and operated by Timothy Fowler, T&T is a single-team operation: the same company that maintains your lawn also understands how your zones interact with turf, plantings, and drainage, which matters because irrigation problems rarely exist in isolation.
@@ -37,10 +47,3 @@ Troubleshooting is what you need when something is clearly wrong but the cause i
 ## Maintenance plans
 
 Repairs fix what's broken; maintenance prevents breakdowns. Our seasonal and recurring plans include spring activation checks, mid-season inspections, controller reprogramming for seasonal needs, and head-by-head coverage verification. Visits also include efficiency recommendations (high-efficiency nozzles, rain sensors, or converting spray zones to drip in beds) which reduce water waste and lower utility costs across Charleston's long March-through-October irrigation season.
-
-## Why choose T&T for irrigation repair
-
-- **Owner-involved on every job.** The person who scopes the work is connected to the person who completes it.
-- **Lowcountry knowledge in every repair.** Sandy soil means longer cycles, salt air corrodes metal fittings faster, and high water tables shift valve boxes: we account for all of it.
-- **Irrigation plus lawn care under one roof.** If turf is declining, we can tell whether it's coverage, soil, or drainage: one company, one diagnosis, one solution.
-- **Transparent pricing, fast scheduling.** Itemized estimates with no vague packages, and priority response for mainline leaks or stuck valves that waste thousands of gallons.

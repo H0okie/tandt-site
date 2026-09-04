@@ -5,6 +5,7 @@ import { serviceSchema, breadcrumbList, faqPage } from "../../../lib/schema";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import ServiceCard from "../../../components/ServiceCard.astro";
 import ServiceFaq from "../../../components/ServiceFaq.astro";
+import ServiceWhyUs from "../../../components/ServiceWhyUs.astro";
 import ServiceQuoteCta from "../../../components/ServiceQuoteCta.astro";
 
 export async function getStaticPaths() {
@@ -76,10 +77,15 @@ const heroImage = service.data.heroImage ?? "/images/site/commercial-landscape-m
     </div>
   </section>
 
+  <ServiceWhyUs
+    title={service.data.whyChooseTitle ?? `Why choose T&T for ${service.data.title.toLowerCase()}`}
+    points={service.data.whyChoose}
+  />
+
   <ServiceFaq faqs={service.data.faqs} />
 
   {related.length > 0 && (
-    <section class="bg-cream">
+    <section class="bg-limestone">
       <div class="container-tt py-16">
         <h2 class="font-display text-2xl font-semibold text-oak">More {category.data.title.toLowerCase()} services</h2>
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

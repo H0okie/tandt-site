@@ -1,7 +1,7 @@
 ---
 title: Weed Control
 category: lawn-care
-heroImage: "/images/services/weed-control-charleston-sc.webp"
+heroImage: /images/services/weed-control-charleston-sc.webp
 order: 6
 shortDescription: Program-based pre- and post-emergent weed control, timed to Charleston's soil temperatures and turf-safe by design.
 features:
@@ -9,12 +9,22 @@ features:
   - Selective post-emergent, turf-safe treatments
   - Species-specific plans (crabgrass, nutsedge, spurge)
   - Year-round program for the long Lowcountry season
+whyChooseTitle: Why choose T&T for weed control
+whyChoose:
+  - title: Owner involvement on every job.
+    description: "Timothy Fowler stays connected to every account: you reach someone who knows your lawn and its history."
+  - title: Local knowledge.
+    description: We know a West Ashley yard drains differently than one on Daniel Island, and when crabgrass starts in this zip code.
+  - title: Full-service.
+    description: Weed control works best alongside fertilization, aeration, overseeding, and disease management, all under one company.
+  - title: Year-round programs.
+    description: Charleston's season is long; weeds don't quit in October here, so our programs run 12 months.
 faqs:
-  - question: "When is the best time to apply weed killer in South Carolina?"
-    answer: "Late February through early March for pre-emergents, before soil temperatures consistently reach 55°F. Post-emergents work best during active weed growth in spring and summer. We schedule based on real-time Charleston soil conditions."
-  - question: "What are the most common lawn weeds in Charleston?"
-    answer: "Crabgrass, nutsedge, clover, dandelion, spurge, chickweed, henbit, and dallisgrass. Sandy coastal soils and high humidity let these thrive if untreated."
-  - question: "How often should I treat for weeds?"
+  - question: When is the best time to apply weed killer in South Carolina?
+    answer: Late February through early March for pre-emergents, before soil temperatures consistently reach 55°F. Post-emergents work best during active weed growth in spring and summer. We schedule based on real-time Charleston soil conditions.
+  - question: What are the most common lawn weeds in Charleston?
+    answer: Crabgrass, nutsedge, clover, dandelion, spurge, chickweed, henbit, and dallisgrass. Sandy coastal soils and high humidity let these thrive if untreated.
+  - question: How often should I treat for weeds?
     answer: "Most Charleston lawns benefit from a year-round program: pre-emergents in early spring and fall, post-emergent spot treatments as needed. We typically recommend 6–8 visits per year for full coverage."
 draft: false
 ---
@@ -37,10 +47,3 @@ Post-emergent herbicides kill weeds that have already sprouted. We use selective
 ## Heavy weed pressure and Mount Pleasant conditions
 
 For properties where weeds have overtaken more than half the turf (common on neglected or new-construction lots) we assess whether spot treatment or full renovation makes more sense, sometimes pairing weed killer with aeration, overseeding, or sod to restore the lawn. In Mount Pleasant, reclaimed marsh land with high water tables promotes nutsedge and sedge-type weeds, so we adjust product selection and scheduling for neighborhoods like I'On, Park West, Dunes West, and Rivertowne.
-
-## Why choose T&T for weed control
-
-- **Owner involvement on every job.** Timothy Fowler stays connected to every account: you reach someone who knows your lawn and its history.
-- **Local knowledge.** We know a West Ashley yard drains differently than one on Daniel Island, and when crabgrass starts in this zip code.
-- **Full-service.** Weed control works best alongside fertilization, aeration, overseeding, and disease management, all under one company.
-- **Year-round programs.** Charleston's season is long; weeds don't quit in October here, so our programs run 12 months.

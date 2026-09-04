@@ -1,7 +1,7 @@
 ---
 title: Aeration & Overseed
 category: lawn-care
-heroImage: "/images/services/lawn-aeration-in-charleston.webp"
+heroImage: /images/services/lawn-aeration-in-charleston.webp
 order: 2
 shortDescription: Core aeration and overseeding that relieves compaction, thickens thin turf, and gives new seed the perfect seedbed across Charleston.
 features:
@@ -9,13 +9,23 @@ features:
   - Overseeding with a site-appropriate blend
   - Combined aeration + overseed + starter fertilizer
   - Timed to your grass type and the Lowcountry calendar
+whyChooseTitle: Why choose T&T for lawn aeration
+whyChoose:
+  - title: Owner-operated.
+    description: "Timothy Fowler stays involved from the initial walk-through to the final follow-up: no rotating crew that's never seen your property."
+  - title: Core aeration exclusively, never spike.
+    description: Clemson University's Cooperative Extension recommends core aeration because it removes compacted soil rather than pushing it sideways.
+  - title: Local knowledge.
+    description: Our crews know the difference between Mount Pleasant's sandy soil and West Ashley's heavier clay, and how the high water table, salt, and humidity affect growth here.
+  - title: Full-service under one roof.
+    description: "If aeration reveals drainage problems, heavy thatch, or soil that needs amendment, we handle it: no subcontractors."
 faqs:
-  - question: "What is the best time to aerate a lawn in Charleston?"
-    answer: "It depends on grass type. Warm-season grasses (Bermuda, Zoysia, Centipede) should be aerated during active growth from late spring through summer; cool-season grasses like tall fescue do best with fall aeration."
-  - question: "Why is core aeration better than spike aeration?"
-    answer: "Core aeration uses hollow tines to pull plugs of soil, physically removing compacted material and creating channels for air, water, and nutrients. Spike aeration just pokes holes, which can increase compaction. Clemson University recommends core aeration for long-term turf health."
-  - question: "Can I mow right after aeration?"
-    answer: "Wait two to three days before mowing. The soil plugs break down naturally within one to two weeks and return nutrients to the soil; a light watering after service helps."
+  - question: What is the best time to aerate a lawn in Charleston?
+    answer: It depends on grass type. Warm-season grasses (Bermuda, Zoysia, Centipede) should be aerated during active growth from late spring through summer; cool-season grasses like tall fescue do best with fall aeration.
+  - question: Why is core aeration better than spike aeration?
+    answer: Core aeration uses hollow tines to pull plugs of soil, physically removing compacted material and creating channels for air, water, and nutrients. Spike aeration just pokes holes, which can increase compaction. Clemson University recommends core aeration for long-term turf health.
+  - question: Can I mow right after aeration?
+    answer: Wait two to three days before mowing. The soil plugs break down naturally within one to two weeks and return nutrients to the soil; a light watering after service helps.
 draft: false
 ---
 T&T Lawn and Landscape provides professional lawn aeration and overseeding in Charleston, SC for residential and commercial properties across the Lowcountry. Founded and owner-operated by Timothy Fowler, T&T works in Charleston's sandy soil, salt air, and subtropical humidity every day, so our programs are built for the conditions here, not shipped in from another climate zone.
@@ -41,10 +51,3 @@ Combining aeration and overseeding in one visit beats doing either alone: aerati
 ## Seasonal timing
 
 Most lawns need aeration once a year; heavily compacted or high-traffic properties may benefit from twice-annual service. Warm-season grasses (Bermuda, Zoysia, Centipede, St. Augustine) are best aerated from late spring through mid-summer during active growth. Cool-season grasses like tall fescue respond best to fall aeration, roughly September through October. We send reminders before each service window so you never miss the optimal timing.
-
-## Why choose T&T for lawn aeration
-
-- **Owner-operated.** Timothy Fowler stays involved from the initial walk-through to the final follow-up: no rotating crew that's never seen your property.
-- **Core aeration exclusively, never spike.** Clemson University's Cooperative Extension recommends core aeration because it removes compacted soil rather than pushing it sideways.
-- **Local knowledge.** Our crews know the difference between Mount Pleasant's sandy soil and West Ashley's heavier clay, and how the high water table, salt, and humidity affect growth here.
-- **Full-service under one roof.** If aeration reveals drainage problems, heavy thatch, or soil that needs amendment, we handle it: no subcontractors.

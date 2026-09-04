@@ -6,12 +6,12 @@
 // CI/Workers deploy. Explicit width/height prevent layout shift.
 import { site } from "../config/site";
 
-interface Props { dark?: boolean; class?: string; }
-const { dark = false, class: cls = "" } = Astro.props;
+interface Props { dark?: boolean; class?: string; size?: number; }
+const { dark = false, class: cls = "", size = 34 } = Astro.props;
 
-// Source webp is 506×120; display at 34px tall.
-const height = 34;
-const width = Math.round((height * 506) / 120); // 143
+// Source webp is 506×120; display at `size`px tall (defaults to 34px).
+const height = size;
+const width = Math.round((height * 506) / 120);
 ---
 <a href="/" class:list={["inline-flex items-center", cls]} aria-label={`${site.name}, home`}>
   <img
@@ -20,6 +20,7 @@ const width = Math.round((height * 506) / 120); // 143
     width={width}
     height={height}
     decoding="async"
-    class:list={["h-[34px] w-auto", dark && "[filter:brightness(0)_invert(1)]"]}
+    style={`height: ${height}px`}
+    class:list={["w-auto", dark && "[filter:brightness(0)_invert(1)]"]}
   />
 </a>

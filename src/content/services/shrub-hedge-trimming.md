@@ -1,7 +1,7 @@
 ---
 title: Shrub & Hedge Trimming
 category: tree-shrub
-heroImage: "/images/services/bush-trimming-charleston.webp"
+heroImage: /images/services/bush-trimming-charleston.webp
 order: 4
 shortDescription: Species-aware shrub and hedge trimming, shaping, and rejuvenation pruning, timed to bloom cycles so you never lose a season of color.
 features:
@@ -9,13 +9,23 @@ features:
   - Formal shaping and natural profiles
   - Rejuvenation pruning where species allow
   - Quarterly and monthly maintenance plans
+whyChooseTitle: Why choose T&T for hedge trimming
+whyChoose:
+  - title: Owner involvement on every project.
+    description: The person who quotes the job oversees the work.
+  - title: Lowcountry plant knowledge.
+    description: We work with wax myrtle, yaupon holly, tea olive, pittosporum, and Confederate jasmine daily and know which handle hard pruning and which need light shaping only.
+  - title: Full-service capability.
+    description: "Trimming often uncovers a blocked irrigation head or a dead limb over the hedge line: we address it in the same visit."
+  - title: Clean crews, transparent pricing.
+    description: All clippings removed, and a written itemized quote before work starts.
 faqs:
-  - question: "How often should I trim hedges in Charleston?"
-    answer: "Most residential hedges need trimming three to four times per year, roughly every 8–10 weeks during the growing season (March–October), plus one cleanup before winter. High-visibility commercial hedges often need monthly service."
-  - question: "What's the difference between trimming and pruning?"
-    answer: "Trimming shapes and maintains size and form for aesthetics; pruning is corrective work that removes dead, damaged, or crossing branches to improve health and airflow. Rejuvenation pruning handles severely overgrown plants with hard cuts back to 6–12 inches."
-  - question: "Can overgrown hedges be saved with rejuvenation pruning?"
-    answer: "Sometimes, it depends on species. Ligustrum and loropetalum respond well to hard cuts; boxwood and some hollies don't. We never remove more than one-third of a shrub's growth in one session to avoid stress and dieback."
+  - question: How often should I trim hedges in Charleston?
+    answer: Most residential hedges need trimming three to four times per year, roughly every 8–10 weeks during the growing season (March–October), plus one cleanup before winter. High-visibility commercial hedges often need monthly service.
+  - question: What's the difference between trimming and pruning?
+    answer: Trimming shapes and maintains size and form for aesthetics; pruning is corrective work that removes dead, damaged, or crossing branches to improve health and airflow. Rejuvenation pruning handles severely overgrown plants with hard cuts back to 6–12 inches.
+  - question: Can overgrown hedges be saved with rejuvenation pruning?
+    answer: Sometimes, it depends on species. Ligustrum and loropetalum respond well to hard cuts; boxwood and some hollies don't. We never remove more than one-third of a shrub's growth in one session to avoid stress and dieback.
 draft: false
 ---
 Hedge trimming in Charleston, SC keeps residential and commercial landscapes looking clean, healthy, and intentional. Left untrimmed, Lowcountry hedges grow fast: subtropical humidity and long growing seasons push species like ligustrum, viburnum, and Indian hawthorn into dense, unruly shapes within weeks. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T handles hedge care as part of a complete landscaping operation, so your trimming crew already understands your layout, soil, and plant material: one company, one point of contact, no gaps between services.
@@ -35,10 +45,3 @@ Pruning is corrective work: removing dead, damaged, or crossing branches to impr
 ## Mount Pleasant and maintenance programs
 
 We serve East Cooper (Old Village, Park West, I'On) with the same crews and equipment as Charleston proper, handling formal privet hedges, podocarpus screens, and mixed HOA border plantings, with documented before-and-after photos for board reporting. One-time trimming fixes the immediate problem; a maintenance program keeps it fixed. Most residential properties need trimming three to four times per year (roughly every 8 to 10 weeks March through October plus a winter cleanup) while high-visibility commercial hedges often need monthly service. Our quarterly and monthly plans lock in visit frequency and scope up front.
-
-## Why choose T&T for hedge trimming
-
-- **Owner involvement on every project.** The person who quotes the job oversees the work.
-- **Lowcountry plant knowledge.** We work with wax myrtle, yaupon holly, tea olive, pittosporum, and Confederate jasmine daily and know which handle hard pruning and which need light shaping only.
-- **Full-service capability.** Trimming often uncovers a blocked irrigation head or a dead limb over the hedge line: we address it in the same visit.
-- **Clean crews, transparent pricing.** All clippings removed, and a written itemized quote before work starts.

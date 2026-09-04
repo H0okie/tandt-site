@@ -9,6 +9,16 @@ features:
   - Seasonal color rotations at high-visibility beds
   - Irrigation management and system audits
   - Priority storm debris removal
+whyChooseTitle: "Why Charleston HOA boards choose T&T"
+whyChoose:
+  - title: "Owner involvement on every account."
+    description: "Timothy Fowler walks each property before work begins and stays accessible to board members: you talk to someone who knows your community's layout, plant inventory, and history."
+  - title: "One company for every service."
+    description: "Mowing, tree work, irrigation, and seasonal color under one contract with one point of contact: fewer scheduling conflicts and simplified billing."
+  - title: "Built for Lowcountry conditions."
+    description: "Plant selections, fertilization schedules, and drainage solutions reflect what works here, not a franchise playbook written for another region."
+  - title: "Clear pricing and communication."
+    description: "Itemized proposals with written scope, plus monthly or quarterly reports for boards that want documentation."
 faqs:
   - question: "What HOA services do you provide?"
     answer: "Full-service HOA landscaping including weekly mowing and maintenance, design and installation, seasonal plantings, irrigation management, tree and shrub care, and emergency debris removal tailored to Lowcountry conditions."
@@ -33,10 +43,3 @@ Consistent maintenance keeps property values up and complaints down: we provide 
 We design and install features for common areas, clubhouse surrounds, pool decks, entry monuments, and streetscapes, selecting Zone 8b/9a performers like muhly grass, dwarf palmetto, and Southern wax myrtle that handle salt and periodic flooding, with full drawings and written scope on larger projects. First impressions matter, so we rotate seasonal color at entries and high-visibility beds: lantana, pentas, and SunPatiens for spring and summer; pansies, ornamental kale, and cyclamen for fall and winter, and maintain permanent beds with fresh mulch and defined edging. We install, repair, and manage irrigation (controller programming, head adjustments, leak detection, seasonal shutoff, drip and rain sensors), and perform full audits on aging systems to lower water costs. For tree and shrub care, we handle trimming, crown reduction, hazard-limb and full removal with stump grinding on palms, live oaks, and crepe myrtles, plus screening-hedge rotations aligned to each species' growth cycle.
 
 <img src="/images/services/community-landscape-services-charleston-sc.webp" alt="Community landscape services in Charleston, SC" loading="lazy" />
-
-## Why Charleston HOA boards choose T&T
-
-- **Owner involvement on every account.** Timothy Fowler walks each property before work begins and stays accessible to board members: you talk to someone who knows your community's layout, plant inventory, and history.
-- **One company for every service.** Mowing, tree work, irrigation, and seasonal color under one contract with one point of contact: fewer scheduling conflicts and simplified billing.
-- **Built for Lowcountry conditions.** Plant selections, fertilization schedules, and drainage solutions reflect what works here, not a franchise playbook written for another region.
-- **Clear pricing and communication.** Itemized proposals with written scope, plus monthly or quarterly reports for boards that want documentation.
