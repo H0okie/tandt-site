@@ -4,17 +4,17 @@
 // Design page (see [service].astro), not a site-wide section.
 import { site } from "../config/site";
 
-const areas = [
-  "Charleston",
-  "North Charleston",
-  "West Ashley",
-  "Summerville",
-  "Mount Pleasant",
-  "Goose Creek",
-  "Daniel Island",
-  "Folly Beach",
-  "James Island",
-  "Isle of Palms",
+const areas: { label: string; href?: string }[] = [
+  { label: "Charleston" },
+  { label: "North Charleston" },
+  { label: "West Ashley" },
+  { label: "Summerville" },
+  { label: "Mount Pleasant" },
+  { label: "Goose Creek" },
+  { label: "Daniel Island", href: "/landscape-design-in-daniel-island-sc/" },
+  { label: "Folly Beach" },
+  { label: "James Island" },
+  { label: "Isle of Palms" },
 ];
 
 const addressQuery = `${site.address.street}, ${site.address.city}, ${site.address.state} ${site.address.zip}`;
@@ -30,7 +30,11 @@ const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(addressQuery)
             <span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-turf text-cream">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4.2 4.2L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
-            <span class="text-loam">{area}</span>
+            {area.href ? (
+              <a href={area.href} class="text-loam underline decoration-line underline-offset-2 transition-colors hover:text-turf">{area.label}</a>
+            ) : (
+              <span class="text-loam">{area.label}</span>
+            )}
           </li>
         ))}
       </ul>
