@@ -1,7 +1,7 @@
 ---
 title: Fountains
 category: hardscaping
-heroImage: "/images/services/backyard-water-feature-charleston.webp"
+heroImage: /images/services/backyard-water-feature-charleston.webp
 order: 6
 shortDescription: Fountains, pondless waterfalls, and custom stone water features designed, built, and maintained for the Lowcountry's soil and salt air.
 features:
@@ -9,15 +9,25 @@ features:
   - Low-maintenance pondless waterfalls
   - Custom stone streams and spillways
   - Repair, seasonal service, and winterization
+whyChooseTitle: Why choose T&T for water features
+whyChoose:
+  - title: Owner-operated.
+    description: The person who scopes your project is the same person who oversees completion and testing.
+  - title: Full-service integration.
+    description: Drainage grading before the build, plantings and lighting after, hardscape borders, all under one team.
+  - title: Straightforward pricing.
+    description: A written, itemized proposal before work begins, with design drawings on larger projects.
+  - title: We built it, we stand behind it.
+    description: Recurring maintenance keeps the feature running through every Lowcountry season.
 faqs:
-  - question: "What are the benefits of pondless water features?"
+  - question: What are the benefits of pondless water features?
     answer: "They circulate water over rocks into a hidden underground reservoir, offering flowing water without an open pond: lower maintenance, safer for children and pets, less space, and well-suited to sandy soil."
-  - question: "How do Charleston's climate and soil affect installation?"
+  - question: How do Charleston's climate and soil affect installation?
     answer: "Sandy soil, high water tables, salt exposure, and a subtropical climate require specialized techniques: we design with proper drainage, salt-tolerant materials, and seasonal maintenance plans for long-term performance."
-  - question: "Can you build a custom feature to my specifications?"
-    answer: "Yes, we build custom features in natural stone and boulders, with Timothy Fowler working directly with clients on unique designs from stream beds to integrated outdoor-kitchen features, with written scope and timeline."
-  - question: "What maintenance does a water feature require?"
-    answer: "Pump cleaning, filter replacement, algae treatment, and winterization specific to Charleston's climate, covered by seasonal contracts spanning spring startup, mid-season cleaning, fall leaf protection, and winter shutdown."
+  - question: Can you build a custom feature to my specifications?
+    answer: Yes, we build custom features in natural stone and boulders, with Timothy Fowler working directly with clients on unique designs from stream beds to integrated outdoor-kitchen features, with written scope and timeline.
+  - question: What maintenance does a water feature require?
+    answer: Pump cleaning, filter replacement, algae treatment, and winterization specific to Charleston's climate, covered by seasonal contracts spanning spring startup, mid-season cleaning, fall leaf protection, and winter shutdown.
 draft: false
 ---
 T&T provides professional water feature installation in Charleston, SC for residential and commercial properties throughout the Lowcountry: a fountain at your front entry, a pondless waterfall in the backyard, or a custom stone feature built into an outdoor living space, with design, installation, and ongoing maintenance handled by our team. Founded by Timothy Fowler and based at 2124 Parsons Corner, T&T builds around the specific conditions here: sandy soil, high water tables, salt exposure, and a subtropical climate that keeps outdoor spaces in use nearly year-round.
@@ -37,10 +47,3 @@ Pondless water features are one of our most popular requests across Mount Pleasa
 ## Repair and maintenance
 
 Existing water features need regular service: we provide pump replacement, liner repair, filtration cleaning, algae treatment, and full system diagnostics for fountains, ponds, and pondless features. If your feature was installed by another company and has stopped working or is leaking, we assess it and give an honest repair-or-replace recommendation. Our seasonal maintenance contracts cover spring startup, mid-season cleaning, fall leaf protection, and winter shutdown procedures specific to Charleston's mild but unpredictable climate.
-
-## Why choose T&T for water features
-
-- **Owner-operated.** The person who scopes your project is the same person who oversees completion and testing.
-- **Full-service integration.** Drainage grading before the build, plantings and lighting after, hardscape borders, all under one team.
-- **Straightforward pricing.** A written, itemized proposal before work begins, with design drawings on larger projects.
-- **We built it, we stand behind it.** Recurring maintenance keeps the feature running through every Lowcountry season.

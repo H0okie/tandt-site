@@ -1,7 +1,7 @@
 ---
 title: French Drains
 category: irrigation
-heroImage: "/images/services/french-drain-installer-charleston.webp"
+heroImage: /images/services/french-drain-installer-charleston.webp
 order: 4
 shortDescription: French drain systems that intercept subsurface water and redirect it away from foundations, lawns, and beds, engineered for the Lowcountry water table.
 features:
@@ -9,15 +9,25 @@ features:
   - Downspout and channel-drain integration
   - Repair and flushing of existing systems
   - Full landscape drainage plans
+whyChooseTitle: Why choose T&T for french drains
+whyChoose:
+  - title: Owner involvement on every project.
+    description: You talk to someone who knows your property and the drainage plan, not a rotating account manager.
+  - title: Built for Lowcountry conditions.
+    description: "High water table, sandy soil, salt, and subtropical rainfall require specific knowledge: we size every system accordingly."
+  - title: One company, full service.
+    description: French drains often connect to regrading, sod, retaining walls, and irrigation adjustments, all handled by one team.
+  - title: Clear proposals, ongoing maintenance.
+    description: Written scopes with specific measurements and pricing, plus recurring inspection contracts that catch issues before water damage.
 faqs:
-  - question: "How long does installation take?"
-    answer: "Most residential projects take one to two days; larger systems running an entire property line or connecting multiple downspouts may take three. We schedule around weather and soil moisture, which fluctuate through Charleston's seasons."
-  - question: "Do I need a french drain if my yard floods after rain?"
-    answer: "Standing water after a storm is one of the clearest signs. Charleston's flat terrain and high water table make surface runoff slow, and sandy soil saturates quickly, so a french drain collects and redirects subsurface water before it pools around your foundation, walkways, or beds."
-  - question: "Can a french drain protect my foundation?"
-    answer: "Yes, a properly installed drain intercepts groundwater before it reaches foundation walls, which matters in the Lowcountry where storms push the water table close to the surface. Redirecting that water reduces hydrostatic pressure and lowers moisture-intrusion risk."
-  - question: "Do you offer free consultations?"
-    answer: "Yes, Timothy Fowler or a senior crew member walks your property, assesses grading and soil, identifies the water source, and delivers a written proposal with clear scope and pricing. Call 843-305-7025 to schedule."
+  - question: How long does installation take?
+    answer: Most residential projects take one to two days; larger systems running an entire property line or connecting multiple downspouts may take three. We schedule around weather and soil moisture, which fluctuate through Charleston's seasons.
+  - question: Do I need a french drain if my yard floods after rain?
+    answer: Standing water after a storm is one of the clearest signs. Charleston's flat terrain and high water table make surface runoff slow, and sandy soil saturates quickly, so a french drain collects and redirects subsurface water before it pools around your foundation, walkways, or beds.
+  - question: Can a french drain protect my foundation?
+    answer: Yes, a properly installed drain intercepts groundwater before it reaches foundation walls, which matters in the Lowcountry where storms push the water table close to the surface. Redirecting that water reduces hydrostatic pressure and lowers moisture-intrusion risk.
+  - question: Do you offer free consultations?
+    answer: Yes, Timothy Fowler or a senior crew member walks your property, assesses grading and soil, identifies the water source, and delivers a written proposal with clear scope and pricing. Call 843-305-7025 to schedule.
 draft: false
 ---
 French drain installation in Charleston, SC starts with understanding why water behaves the way it does on Lowcountry properties. Flat terrain, sandy soil, a high water table, and an annual rainfall average above 50 inches create persistent drainage challenges: water pools in yards, saturates foundation perimeters, and turns beds into mud. Founded and operated by Timothy Fowler and based at 2124 Parsons Corner, T&T installs french drain systems that solve these problems at the source, with crews who know exactly how Charleston soil drains, and where it doesn't, because we work here every day.
@@ -33,10 +43,3 @@ A french drain is a gravel-filled trench with a perforated pipe that collects su
 Not every problem needs a full french drain: some properties need a simple drainage trench (open or covered channel) using channel drains, catch basins, and solid PVC to move surface water off patios, driveways, or foundations, and we often combine the two: a channel drain along a patio edge for surface runoff, a french drain behind a retaining wall for subsurface water, connected to discharge together. French drains lose performance over time from silt buildup, root intrusion, crushed sections, or collapsed fabric, so we diagnose and repair existing systems (even ones we didn't install), flushing pipe with a high-pressure hose, replacing damaged sections, re-grading to restore slope, and adding cleanout access, and recommend a yearly inspection before peak storm season. For complex lots near the Ashley or Wando rivers, where tidal influence raises the water table during high tide, we design complete systems combining french drains, surface drains, dry creek beds, grading, and rain gardens that blend into the finished landscape.
 
 <img src="/images/services/drainage-trench-install-charleston.webp" alt="Drainage trench installation in Charleston" loading="lazy" />
-
-## Why choose T&T for french drains
-
-- **Owner involvement on every project.** You talk to someone who knows your property and the drainage plan, not a rotating account manager.
-- **Built for Lowcountry conditions.** High water table, sandy soil, salt, and subtropical rainfall require specific knowledge: we size every system accordingly.
-- **One company, full service.** French drains often connect to regrading, sod, retaining walls, and irrigation adjustments, all handled by one team.
-- **Clear proposals, ongoing maintenance.** Written scopes with specific measurements and pricing, plus recurring inspection contracts that catch issues before water damage.

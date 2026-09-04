@@ -1,7 +1,7 @@
 ---
 title: Fire Pits
 category: hardscaping
-heroImage: "/images/services/custom-fire-pit-charleston.webp"
+heroImage: /images/services/custom-fire-pit-charleston.webp
 order: 1
 shortDescription: Custom gas and wood-burning fire pits built on a Lowcountry-ready base and integrated into a complete outdoor living space.
 features:
@@ -9,13 +9,23 @@ features:
   - Gas (natural or propane) and wood-burning
   - Drainage-ready base for sandy soil
   - Integrated with patios and seating walls
+whyChooseTitle: Why choose T&T for fire pit installation
+whyChoose:
+  - title: Owner-operated from start to finish.
+    description: You speak directly with the person who oversees your build.
+  - title: Built for Lowcountry conditions.
+    description: "We don't apply inland construction methods to a coastal property: every material choice and base step factors in sandy soil, salt, and storms."
+  - title: Full-service capability.
+    description: Patios, drainage corrections, plantings, and lighting handled in-house, eliminating subcontractor scheduling conflicts.
+  - title: Clear, itemized pricing.
+    description: "Material, labor, and any third-party gas work broken out: no lump-sum guesses or surprise change orders."
 faqs:
-  - question: "Do I need a permit for a fire pit in Charleston?"
-    answer: "Most fire pit installations require local permits and compliance with fire codes. We handle permitting, gas line coordination with licensed fitters, and ensure every installation meets Charleston's requirements."
-  - question: "What's the difference between gas and wood-burning fire pits?"
-    answer: "Gas pits ignite instantly, produce no smoke, and require minimal cleanup, making them ideal for screened porches; wood-burning pits deliver crackle and smoky warmth but need more maintenance and proper airflow design."
-  - question: "Why is base preparation so important here?"
-    answer: "Charleston's sandy soil and high water table require proper excavation, drainage aggregate, and compaction to prevent shifting, settling, and water pooling after rain, a common problem with DIY installations."
+  - question: Do I need a permit for a fire pit in Charleston?
+    answer: Most fire pit installations require local permits and compliance with fire codes. We handle permitting, gas line coordination with licensed fitters, and ensure every installation meets Charleston's requirements.
+  - question: What's the difference between gas and wood-burning fire pits?
+    answer: Gas pits ignite instantly, produce no smoke, and require minimal cleanup, making them ideal for screened porches; wood-burning pits deliver crackle and smoky warmth but need more maintenance and proper airflow design.
+  - question: Why is base preparation so important here?
+    answer: Charleston's sandy soil and high water table require proper excavation, drainage aggregate, and compaction to prevent shifting, settling, and water pooling after rain, a common problem with DIY installations.
 draft: false
 ---
 Outdoor fire pit installation in Charleston, SC gives homeowners and businesses a functional gathering space they can use nearly year-round. Charleston's mild winters and long fall evenings make a fire pit one of the most practical additions to any Lowcountry property. Founded and owner-operated by Timothy Fowler, T&T handles every step from the initial site assessment and design consultation through construction and hardscape integration. Because we also install patios, seating walls, and outdoor kitchens, your fire pit becomes part of a complete outdoor living space rather than a standalone feature.
@@ -35,10 +45,3 @@ Gas fire pits are popular across Mount Pleasant and East Cooper because they ign
 ## Hardscape integration, repair, and upgrades
 
 A fire pit works best as part of a larger outdoor living area, so we integrate construction with paver patios, sitting walls, walkways, and outdoor kitchens, frequently building a circular paver patio with a pit centered inside a low seating wall that doubles as permanent seating. We match paver colors and stone textures across the whole hardscape so it never looks bolted on. We also repair and renovate existing pits: replacing deteriorated mortar, upgrading wood-burning pits to gas burner systems, adding stone veneer over aging block, and installing wind guards or spark screens. If the bones are solid, a renovation costs far less than a full rebuild.
-
-## Why choose T&T for fire pit installation
-
-- **Owner-operated from start to finish.** You speak directly with the person who oversees your build.
-- **Built for Lowcountry conditions.** We don't apply inland construction methods to a coastal property: every material choice and base step factors in sandy soil, salt, and storms.
-- **Full-service capability.** Patios, drainage corrections, plantings, and lighting handled in-house, eliminating subcontractor scheduling conflicts.
-- **Clear, itemized pricing.** Material, labor, and any third-party gas work broken out: no lump-sum guesses or surprise change orders.

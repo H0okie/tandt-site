@@ -1,0 +1,25 @@
+---
+// "Why choose T&T for X" — pulled out of the inline prose into its own
+// full-bleed band (matching the homepage's WhyUs section) so it reads as a
+// distinct selling block instead of just more paragraph text.
+interface Point { title: string; description: string; }
+interface Props { title: string; points: Point[] }
+const { title, points } = Astro.props;
+---
+{points.length > 0 && (
+  <section class="bg-limestone">
+    <div class="container-tt py-20">
+      <h2 class="font-display text-2xl font-semibold text-oak sm:text-3xl">{title}</h2>
+      <ul class="mt-8 grid gap-5 sm:grid-cols-2">
+        {points.map((p) => (
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-turf text-cream">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4.2 4.2L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="text-loam"><strong class="font-semibold text-oak">{p.title}</strong> {p.description}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}

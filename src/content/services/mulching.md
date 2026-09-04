@@ -1,7 +1,7 @@
 ---
 title: Mulching
 category: landscaping
-heroImage: "/images/services/bed-edging-charleston-sc.webp"
+heroImage: /images/services/bed-edging-charleston-sc.webp
 order: 4
 shortDescription: Professional mulch installation and bed edging that protects beds, suppresses weeds, and gives your Charleston property a clean, finished look.
 features:
@@ -9,15 +9,25 @@ features:
   - 2–3 inch depth, kept clear of plant bases
   - Hardwood, dyed, pine bark, or pine straw
   - Bulk delivery plus seasonal refresh programs
+whyChooseTitle: Why choose T&T for mulch installation
+whyChoose:
+  - title: Owner-involved on every project.
+    description: Timothy Fowler is involved from estimate to final walkthrough.
+  - title: Built for Lowcountry conditions.
+    description: "Sandy soil and salt air affect mulch selection, depth, and decomposition: our crews factor that into every recommendation."
+  - title: One company, full service.
+    description: "Mulching often ties into new plantings, overdue edging, or buried irrigation heads: all handled by one team."
+  - title: Clean job sites and honest pricing.
+    description: Driveways swept, walkways blown off, and itemized quotes with no vague "mulch package."
 faqs:
-  - question: "How often should mulch be refreshed in Charleston?"
-    answer: "Organic mulch decomposes within 6–12 months in this climate. A spring refresh after winter and a light fall top-dressing maintain proper depth and color year-round."
-  - question: "What types of mulch do you install?"
-    answer: "Hardwood mulch, dyed mulch (black, brown, red), pine bark nuggets, and pine straw, chosen for aesthetic preference, plant material, sun exposure, and soil conditions."
-  - question: "Why is professional bed edging important?"
-    answer: "It creates a sharp, defined boundary that stops grass from creeping into beds and mulch from washing into turf, reducing maintenance and keeping the landscape looking finished."
-  - question: "How does sandy soil affect mulch needs?"
-    answer: "Sandy soil drains quickly and salt exposure accelerates decomposition, so proper depth, material selection, and regular refreshing are essential to retain moisture and protect plants."
+  - question: How often should mulch be refreshed in Charleston?
+    answer: Organic mulch decomposes within 6–12 months in this climate. A spring refresh after winter and a light fall top-dressing maintain proper depth and color year-round.
+  - question: What types of mulch do you install?
+    answer: Hardwood mulch, dyed mulch (black, brown, red), pine bark nuggets, and pine straw, chosen for aesthetic preference, plant material, sun exposure, and soil conditions.
+  - question: Why is professional bed edging important?
+    answer: It creates a sharp, defined boundary that stops grass from creeping into beds and mulch from washing into turf, reducing maintenance and keeping the landscape looking finished.
+  - question: How does sandy soil affect mulch needs?
+    answer: Sandy soil drains quickly and salt exposure accelerates decomposition, so proper depth, material selection, and regular refreshing are essential to retain moisture and protect plants.
 draft: false
 ---
 Mulch installation in Charleston, SC protects your landscape beds, reduces weed growth, and gives your property a clean, finished look. T&T delivers professional mulching for homeowners, HOAs, property managers, and businesses across the greater Charleston area: handling every step from bed preparation and edging to mulch delivery and installation. In Charleston's sandy soil, salt exposure, and humid climate, a properly installed 2–3 inch mulch layer regulates soil temperature, holds moisture during summer heat, and suppresses weeds without chemicals.
@@ -37,10 +47,3 @@ Clean bed edges define the boundary between lawn and beds: without them, grass c
 ## Mulch refresh and top-dressing
 
 Organic mulch decomposes noticeably within 6–12 months in Charleston's warm, humid climate. A refresh adds a thin layer of fresh material over existing mulch to restore color, maintain depth, and extend the life of your beds. We offer seasonal refresh programs (typically a spring refresh after winter and a light fall top-dressing) which are especially popular with property managers and HOAs who need consistent curb appeal across multiple buildings.
-
-## Why choose T&T for mulch installation
-
-- **Owner-involved on every project.** Timothy Fowler is involved from estimate to final walkthrough.
-- **Built for Lowcountry conditions.** Sandy soil and salt air affect mulch selection, depth, and decomposition: our crews factor that into every recommendation.
-- **One company, full service.** Mulching often ties into new plantings, overdue edging, or buried irrigation heads: all handled by one team.
-- **Clean job sites and honest pricing.** Driveways swept, walkways blown off, and itemized quotes with no vague "mulch package."

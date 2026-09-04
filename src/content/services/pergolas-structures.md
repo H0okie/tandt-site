@@ -1,7 +1,7 @@
 ---
 title: Pergolas & Small Structures
 category: hardscaping
-heroImage: "/images/services/pergola-builder-charleston.webp"
+heroImage: /images/services/pergola-builder-charleston.webp
 order: 4
 shortDescription: Custom pergolas, arbors, and shade structures in cedar, composite, or aluminum, built for salt air, with permit and HOA coordination handled.
 features:
@@ -9,15 +9,25 @@ features:
   - Cedar, aluminum, composite, or treated lumber
   - Corrosion-resistant hardware and footings
   - Permit, HOA, and maintenance coordination
+whyChooseTitle: Why choose T&T for pergola work
+whyChoose:
+  - title: Single point of accountability.
+    description: "One company, one crew, one phone number: no finger-pointing between subcontractors."
+  - title: Full-service integration.
+    description: Pergola work coordinated with landscape design, hardscape, irrigation, and lighting for a cohesive result.
+  - title: Honest, itemized pricing.
+    description: Every proposal includes a written scope and material breakdown.
+  - title: Permit and HOA coordination.
+    description: We handle the paperwork so you don't chase approvals, and we carry full insurance and the appropriate local licenses.
 faqs:
-  - question: "Do I need a permit to build a pergola in Charleston?"
+  - question: Do I need a permit to build a pergola in Charleston?
     answer: "Often, yes: the City and County require building permits for structures over certain size thresholds or that attach to an existing building. We handle permitting as part of our standard project scope."
-  - question: "What materials work best in Charleston's climate?"
-    answer: "Cedar and aluminum perform well in the high-humidity, salt-air environment; pressure-treated lumber is budget-friendly for inland properties; composite offers low maintenance at a higher price. We help you choose based on location and exposure."
-  - question: "How long does installation take?"
-    answer: "Most residential pergola installations take two to five days once materials are on-site. Larger or permit-dependent projects, or those integrated with hardscape, may take longer; we provide a timeline in every proposal."
-  - question: "Can you meet my HOA's guidelines?"
-    answer: "Yes, many Mount Pleasant and Daniel Island neighborhoods have strict design standards. We review the architectural guidelines during planning and submit compliant designs before construction starts."
+  - question: What materials work best in Charleston's climate?
+    answer: Cedar and aluminum perform well in the high-humidity, salt-air environment; pressure-treated lumber is budget-friendly for inland properties; composite offers low maintenance at a higher price. We help you choose based on location and exposure.
+  - question: How long does installation take?
+    answer: Most residential pergola installations take two to five days once materials are on-site. Larger or permit-dependent projects, or those integrated with hardscape, may take longer; we provide a timeline in every proposal.
+  - question: Can you meet my HOA's guidelines?
+    answer: Yes, many Mount Pleasant and Daniel Island neighborhoods have strict design standards. We review the architectural guidelines during planning and submit compliant designs before construction starts.
 draft: false
 ---
 Pergola installation in Charleston, SC gives homeowners and businesses a functional outdoor structure that adds shade, visual appeal, and usable living space. Founded and owner-operated by Timothy Fowler, T&T builds custom pergolas and outdoor structures for residential and commercial clients across the greater Charleston area, handling every phase from the property walk-through and design through permitting, material selection, and construction. Charleston's subtropical climate makes outdoor living possible nearly year-round, and a well-built pergola extends that, delivered under one crew with one point of accountability.
@@ -37,10 +47,3 @@ Arbors are smaller structures, typically placed over a garden gate, walkway entr
 ## Repair, refinishing, and maintenance
 
 Charleston weather is hard on outdoor wood: UV fades finishes, moisture encourages mold and mildew, and storms loosen joints or crack beams. We offer repair, refinishing, and ongoing maintenance: power washing, sanding, staining or sealing, hardware inspection, and structural tightening. For clients on a recurring contract, we schedule seasonal check-ups so small issues get addressed before they become expensive problems.
-
-## Why choose T&T for pergola work
-
-- **Single point of accountability.** One company, one crew, one phone number: no finger-pointing between subcontractors.
-- **Full-service integration.** Pergola work coordinated with landscape design, hardscape, irrigation, and lighting for a cohesive result.
-- **Honest, itemized pricing.** Every proposal includes a written scope and material breakdown.
-- **Permit and HOA coordination.** We handle the paperwork so you don't chase approvals, and we carry full insurance and the appropriate local licenses.

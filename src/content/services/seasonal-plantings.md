@@ -1,7 +1,7 @@
 ---
 title: Seasonal Plantings
 category: landscaping
-heroImage: "/images/services/spring-planting-charleston-sc.webp"
+heroImage: /images/services/spring-planting-charleston-sc.webp
 order: 6
 shortDescription: Rotating seasonal color and planter changeouts timed to the Lowcountry calendar, keeping your property vibrant spring through fall and into winter.
 features:
@@ -9,12 +9,22 @@ features:
   - Season-appropriate annuals and perennials
   - Planter and container changeouts
   - Bed maintenance between changeouts
+whyChooseTitle: Why choose T&T for seasonal planting
+whyChoose:
+  - title: Owner involvement on every project.
+    description: You talk to someone who knows your property and soil, not a rotating account manager reading notes.
+  - title: Hands-on Lowcountry plant knowledge.
+    description: "We know which annuals hold up through a Lowcountry summer and which fade by June: fewer replacements, longer-lasting color."
+  - title: One company for everything.
+    description: If planting reveals a drainage issue or a shrub that needs removal, we address it in the same visit.
+  - title: Ongoing bed care.
+    description: For recurring clients, we weed, deadhead, and monitor plant health between changeouts so color looks good all season.
 faqs:
-  - question: "What is the best time for seasonal planting in Charleston?"
+  - question: What is the best time for seasonal planting in Charleston?
     answer: "Two main windows: spring planting begins in mid-March after the last average frost (around March 28), and fall planting runs late September through November before the first frost (around November 10)."
-  - question: "What flowers work best for seasonal color here?"
+  - question: What flowers work best for seasonal color here?
     answer: "Spring and summer: petunias, begonias, lantana, and pentas handle the heat and humidity. Fall and winter: pansies, violas, ornamental cabbage, and cyclamen. Selection also depends on sun, drainage, and salt proximity."
-  - question: "How often should planters be changed out?"
+  - question: How often should planters be changed out?
     answer: "Most Charleston planters benefit from two to three changeouts per year: spring (March/April), a summer refresh (June/July), and fall (October) to carry beds through winter."
 draft: false
 ---
@@ -35,10 +45,3 @@ Charleston's last average spring frost falls around March 28, which sets the sta
 ## Planter changeouts
 
 Planter changeouts keep containers, urns, and raised planters fresh year-round, especially popular with downtown Charleston businesses, restaurants, and homes with prominent entryway planters. We remove old plants, refresh potting mix, install new seasonal selections, and add top dressing, scheduling changeouts around the planting calendar (typically March, June/July, and October). For commercial clients on a maintenance contract, changeouts bundle into the recurring plan.
-
-## Why choose T&T for seasonal planting
-
-- **Owner involvement on every project.** You talk to someone who knows your property and soil, not a rotating account manager reading notes.
-- **Hands-on Lowcountry plant knowledge.** We know which annuals hold up through a Lowcountry summer and which fade by June: fewer replacements, longer-lasting color.
-- **One company for everything.** If planting reveals a drainage issue or a shrub that needs removal, we address it in the same visit.
-- **Ongoing bed care.** For recurring clients, we weed, deadhead, and monitor plant health between changeouts so color looks good all season.
