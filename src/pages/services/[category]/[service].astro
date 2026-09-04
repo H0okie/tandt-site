@@ -6,6 +6,7 @@ import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import ServiceCard from "../../../components/ServiceCard.astro";
 import ServiceFaq from "../../../components/ServiceFaq.astro";
 import ServiceWhyUs from "../../../components/ServiceWhyUs.astro";
+import ServiceAreaMap from "../../../components/ServiceAreaMap.astro";
 import ServiceQuoteCta from "../../../components/ServiceQuoteCta.astro";
 
 export async function getStaticPaths() {
@@ -96,5 +97,9 @@ const heroImage = service.data.heroImage ?? "/images/site/commercial-landscape-m
       </div>
     </section>
   )}
+
+  {/* Currently a one-off for this page only, not a general service-page section. */}
+  {service.id === "landscape-design" && <ServiceAreaMap />}
+
   <ServiceQuoteCta />
 </Layout>

@@ -1,0 +1,204 @@
+---
+// Location-specific landing page for Daniel Island, SC, mirroring the
+// original tandtlawnandlandscape.com page of the same name. Deliberately
+// NOT part of the `services` content collection and NOT linked from the
+// navbar (per request): it's a standalone SEO landing page, cross-linked
+// from the main Landscape Design service page via the breadcrumb below.
+// Images and hero treatment are borrowed from that same service page.
+import Layout from "../layouts/Layout.astro";
+import { serviceSchema, breadcrumbList, faqPage } from "../lib/schema";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import ServiceFaq from "../components/ServiceFaq.astro";
+import ServiceQuoteCta from "../components/ServiceQuoteCta.astro";
+
+const title = "Landscape Design in Daniel Island, SC";
+const description =
+  "Custom landscape design in Daniel Island, SC built for Charleston's sandy soil, salt exposure, and coastal climate. Owner-operated by T&T Lawn and Landscape.";
+const heroImage = "/images/services/new-landscape-install-charleston-sc.webp";
+
+const crumbs = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services/" },
+  { label: "Landscape Design", href: "/services/landscaping/landscape-design/" },
+  { label: "Daniel Island, SC" },
+];
+
+const faqs = [
+  {
+    question: "What makes landscape design in Daniel Island, SC different from other regions?",
+    answer:
+      "Daniel Island's sandy soil, high water tables, coastal salt exposure, and subtropical climate require specialized design. T&T Lawn and Landscape builds custom plans around these real Lowcountry conditions rather than generic templates.",
+  },
+  {
+    question: "Which plants are best for landscape design in Daniel Island, SC?",
+    answer:
+      "Native and coastal plants perform best in Daniel Island. They handle sandy soil, salt exposure, and high water tables with minimal maintenance. We select species proven to thrive in local Lowcountry conditions.",
+  },
+  {
+    question: "Can I get both landscape design and installation from one company?",
+    answer:
+      "Yes. T&T Lawn and Landscape handles the complete project (design, grading, installation, hardscapes, irrigation, drainage, and maintenance) under one accountable team with no subcontracting.",
+  },
+  {
+    question: "How much does professional landscape design cost in Daniel Island?",
+    answer:
+      "Costs vary based on property size, plant selection, and features. T&T Lawn and Landscape provides free initial estimates with itemized pricing so you know the exact scope before work begins.",
+  },
+  {
+    question: "What outdoor living features can be added to my Daniel Island landscape?",
+    answer:
+      "We design fire pits, seating areas, outdoor kitchens, pergolas, and decorative landscape features. All hardscapes are built to withstand Lowcountry moisture and heat while enhancing your property's value.",
+  },
+  {
+    question: "Do you include irrigation and drainage design with landscape design in Daniel Island?",
+    answer:
+      "Yes. We design and install irrigation systems and drainage solutions like French drains as part of complete landscape plans. Proper water management prevents standing water, root rot, and erosion in the Lowcountry.",
+  },
+];
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const schema = [
+  serviceSchema(title, description, pageUrl),
+  breadcrumbList(crumbs),
+  faqPage(faqs),
+];
+---
+<Layout title={title} description={description} schema={schema}>
+  <section class="relative overflow-hidden bg-oak">
+    <img src={heroImage} alt="" aria-hidden="true" loading="eager" class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-oak/85"></div>
+    <div class="container-tt relative py-14">
+      <Breadcrumbs items={crumbs} />
+      <h1 class="mt-5 max-w-3xl text-4xl text-cream sm:text-5xl">{title}</h1>
+      <p class="mt-4 max-w-2xl text-lg text-cream/80">{description}</p>
+    </div>
+  </section>
+
+  <section class="bg-cream">
+    <div class="container-tt py-16">
+      <div class="prose prose-xl max-w-none prose-img:rounded-2xl">
+        <p>
+          Landscape design in Daniel Island, SC starts with a plan built for the Lowcountry. T&T Lawn
+          and Landscape designs and installs outdoor spaces that fit sandy soil, salt exposure, and the
+          subtropical climate of the area. We are a Charleston-based, owner-operated company led by
+          founder Timothy Fowler.
+        </p>
+        <p>
+          Daniel Island properties face specific conditions. High water tables, coastal winds, and
+          seasonal storms all shape how a yard should be planned. We design each landscape around these
+          real conditions, not a generic template. From the first sketch to the final planting, one
+          accountable team handles the work.
+        </p>
+
+        <img src="/images/services/new-landscape-install-charleston-sc.webp" alt="New landscape installation in Charleston, SC" loading="lazy" />
+
+        <h2>Landscape Design Services Offered in Daniel Island, SC</h2>
+        <p>
+          T&T Lawn and Landscape offers full landscape design services for Daniel Island, SC. We plan
+          residential yards, commercial grounds, and HOA common areas. Each design covers layout, plant
+          selection, hardscape features, lighting, and water management.
+        </p>
+        <p>
+          Our process follows four clear steps. First, we walk the property and assess soil, drainage,
+          and your goals. Then we build an itemized proposal with a written scope. Our crews install the
+          work on schedule. After install, we offer maintenance to keep the results looking sharp across
+          every season.
+        </p>
+
+        <h3>Custom Residential Landscape Design</h3>
+        <p>
+          We create custom landscape designs for Daniel Island homes. Every plan starts with a
+          walk-through of your property. We measure the space, check the soil and drainage, and listen
+          to how you want to use your yard.
+        </p>
+        <p>
+          A good residential design balances curb appeal with function. We plan flower beds, planting
+          zones, walkways, and focal points that suit your home's style. Because we live and work in the
+          Charleston area, our crews know which plant material holds up in Lowcountry conditions.
+        </p>
+        <p>
+          We handle the full project under one team. You get design, grading prep, and installation from
+          the same company. There is no juggling multiple vendors or losing details between crews.
+        </p>
+
+        <h3>Outdoor Living Spaces and Hardscape Design</h3>
+        <p>
+          We design outdoor living spaces that work year-round in the Daniel Island climate. Our
+          hardscape services turn a plain backyard into a finished space you can use in every season.
+        </p>
+        <p>
+          Our outdoor living installations include fire pits, seating areas, outdoor kitchens, and
+          pergolas. We also build decorative landscape features that anchor a design. Each structure is
+          planned to match your home and the way your family or guests use the space.
+        </p>
+        <p>
+          Hardscapes must handle Lowcountry moisture and heat. We select materials and build methods that
+          stand up to the local environment. The result is a durable, attractive space that adds value to
+          your property.
+        </p>
+
+        <img src="/images/services/lawn-repair-service-mount-pleasant.webp" alt="Lawn repair service in Mount Pleasant" loading="lazy" />
+
+        <h3>Native and Coastal Planting Plans for Daniel Island</h3>
+        <p>
+          We build planting plans around native and coastal plant material suited to Daniel Island.
+          Native plants need less water, resist local pests, and handle salt exposure better than many
+          imports. This lowers long-term maintenance and keeps your landscape healthy.
+        </p>
+        <p>
+          Our planting plans account for the high water table and sandy soil common in the area. We
+          group plants by their water and sun needs so each zone thrives. We also plan seasonal plantings
+          and flower bed installations to add color through the year.
+        </p>
+        <p>
+          A smart planting plan protects your investment. We choose species that grow well here and place
+          them where they will succeed.
+        </p>
+
+        <h3>Landscape Lighting and Irrigation Design</h3>
+        <p>
+          We design landscape lighting and irrigation systems as part of a complete plan. Lighting
+          extends how you use your yard after dark and highlights key features like walkways, trees, and
+          outdoor living areas.
+        </p>
+        <p>
+          Irrigation matters in the Lowcountry, where water management can make or break a landscape. We
+          design and install irrigation systems, including drip irrigation, to deliver water where plants
+          need it. We also plan drainage solutions such as French drains to move water away from your
+          home and beds.
+        </p>
+        <p>
+          Proper water management prevents standing water, root rot, and erosion. We build these systems
+          around the conditions that exist on your Daniel Island property.
+        </p>
+
+        <h2>Why Choose T&T Lawn and Landscape in Daniel Island, SC</h2>
+        <p>
+          T&T Lawn and Landscape is owner-operated and rooted in the Lowcountry. Founder Timothy Fowler
+          stays personally involved on every project. You talk to someone who knows your property and the
+          plan, not a rotating account manager.
+        </p>
+        <p>
+          We are one company for every service. From landscape design and installation to hardscapes,
+          irrigation, and ongoing maintenance, one accountable team handles the full scope. There is no
+          subcontracting the relationship and no juggling three vendors.
+        </p>
+        <p>
+          Our crews know Daniel Island conditions firsthand. Sandy soil, salt exposure, a high water
+          table, and hurricane seasons all shape how a landscape should be built. We design our service
+          programs around the conditions that actually exist here.
+        </p>
+        <p>
+          We also serve residential and commercial clients, including HOAs and property managers. Our
+          approach stays the same on every job: clear communication, respectful crews, honest pricing,
+          and finished work we are proud to put our name on. As Timothy puts it, "This is my home too.
+          When we work on your property, we treat it the way I would want someone to treat mine."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <ServiceFaq faqs={faqs} bg="bg-limestone" />
+
+  <ServiceQuoteCta />
+</Layout>
