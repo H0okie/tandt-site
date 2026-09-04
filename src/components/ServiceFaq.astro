@@ -1,0 +1,28 @@
+---
+// Per-service FAQ accordion. Mirrors home/Faq.astro's <details> pattern so
+// the interaction feels identical site-wide, but reads from the service's
+// own frontmatter faqs instead of the shared homepage list.
+import SectionHeading from "./SectionHeading.astro";
+
+interface Faq { question: string; answer: string; }
+interface Props { faqs: Faq[] }
+const { faqs } = Astro.props;
+---
+{faqs.length > 0 && (
+  <section class="bg-limestone">
+    <div class="container-tt py-20">
+      <SectionHeading eyebrow="FAQs" title="Questions, answered" align="center" class="mx-auto max-w-xl" />
+      <div class="mx-auto mt-12 max-w-3xl divide-y divide-line border-y border-line">
+        {faqs.map((faq) => (
+          <details class="group py-2">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-display text-lg font-semibold text-oak marker:hidden">
+              {faq.question}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="flex-none text-turf transition-transform group-open:rotate-45"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </summary>
+            <p class="pb-5 pr-8 leading-relaxed text-stone">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

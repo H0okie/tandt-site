@@ -54,3 +54,37 @@ https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/outdoor-structure-b
 https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/seasonal-flower-planting-Charleston.jpg | public/images/site/seasonal-flower-planting-charleston.webp
 https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/flower-bed-installation-Charleston-SC.webp | public/images/site/flower-bed-installation-charleston-sc.webp
 https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/garden-bed-installation-Charleston-SC.webp | public/images/site/garden-bed-installation-charleston-sc.webp
+
+# --- Service page second content images (added: every live service page has
+#     2+ images in its content; these are the second image for each) ---
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/planting-beds-Charleston-SC.webp | public/images/services/planting-beds-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/drainage-contractor-Charleston-SC.webp | public/images/services/drainage-contractor-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/synthetic-lawn-Mount-Pleasant.webp | public/images/services/synthetic-lawn-mount-pleasant.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/stump-grinder-Charleston-SC.webp | public/images/services/stump-grinder-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/New-Sod-Installation-Charleston-%E2%80%93-Fresh-Sod-for-New-Construction-and-Bare-Yards.webp | public/images/services/new-sod-installation-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/shrub-pruning-Charleston.jpg | public/images/services/shrub-pruning-charleston.jpg
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/driveway-pressure-washing-Charleston-SC.webp | public/images/services/driveway-pressure-washing-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/outdoor-structure-builder-Charleston-SC.webp | public/images/services/outdoor-structure-builder-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/Lawn-Aeration-in-Charleston-SC-TT-Lawn-and-Landscape.webp | public/images/services/lawn-aeration-in-charleston-sc-tt-lawn-and-landscape.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/landscape-makeover-Charleston.webp | public/images/services/landscape-makeover-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/irrigation-troubleshooting-Charleston-SC.webp | public/images/services/irrigation-troubleshooting-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/sprinkler-system-Charleston-SC.webp | public/images/services/sprinkler-system-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/drainage-trench-install-Charleston.webp | public/images/services/drainage-trench-install-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/backyard-fire-pit-Charleston-SC.webp | public/images/services/backyard-fire-pit-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/weed-killer-service-Charleston-SC.webp | public/images/services/weed-killer-service-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/Weekly-Lawn-Mowing-in-Charleston.webp | public/images/services/weekly-lawn-mowing-in-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/patio-seating-area-Charleston.webp | public/images/services/patio-seating-area-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-repair-service-Mount-Pleasant.webp | public/images/services/lawn-repair-service-mount-pleasant.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/community-landscape-services-Charleston-SC.webp | public/images/services/community-landscape-services-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/new-home-sod-and-landscape-Charleston.webp | public/images/services/new-home-sod-and-landscape-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/ChatGPT-Image-May-18-2026-09_31_04-PM.jpg | public/images/services/business-landscaping-charleston-sc.jpg
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/garden-fountain-installer-Charleston-SC.webp | public/images/services/garden-fountain-installer-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/drip-irrigation-Charleston-SC.webp | public/images/services/drip-irrigation-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/landscape-accents-Charleston.webp | public/images/services/landscape-accents-charleston.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/backyard-kitchen-Charleston-SC.webp | public/images/services/backyard-kitchen-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/yard-debris-removal-Charleston-SC.webp | public/images/services/yard-debris-removal-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/tree-cutting-service-Charleston-SC.webp | public/images/services/tree-cutting-service-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/tree-care-Charleston-SC.webp | public/images/services/tree-care-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/seasonal-planting-Charleston-SC.webp | public/images/services/seasonal-planting-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/mulching-service-Charleston-SC.webp | public/images/services/mulching-service-charleston-sc.webp
+https://tandtlawnandlandscape.com/wp-content/uploads/2026/05/lawn-armyworms-removal-service-Mount-Pleasant.webp | public/images/services/lawn-armyworms-removal-service-mount-pleasant.webp

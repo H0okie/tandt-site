@@ -1,9 +1,9 @@
 ---
 title: A Charleston lawn care calendar for every season
-description: When to fertilize, aerate, and adjust your mowing through Charleston's growing seasons — a simple year-round guide for Lowcountry lawns.
+description: When to fertilize, aerate, and adjust your mowing through Charleston's growing seasons, a simple year-round guide for Lowcountry lawns.
 pubDate: 2026-03-15
 ---
-Charleston's warm, humid climate is great for growing grass — and for growing weeds, pests, and fungus right along with it. Timing your lawn care to the season is the difference between a yard that struggles and one that stays thick and green.
+Charleston's warm, humid climate is great for growing grass, and for growing weeds, pests, and fungus right along with it. Timing your lawn care to the season is the difference between a yard that struggles and one that stays thick and green.
 
 ## Spring (March–May)
 

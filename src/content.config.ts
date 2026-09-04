@@ -32,6 +32,8 @@ const services = defineCollection({
     heroImage: z.string().optional(),
     // Bullet-point selling points for the service page
     features: z.array(z.string()).default([]),
+    // Per-service FAQs, rendered as an accordion (see ServiceFaq.astro)
+    faqs: z.array(z.object({ question: z.string(), answer: z.string() })).default([]),
     // Set true to keep a page out of nav/sitemap while you draft it
     draft: z.boolean().default(false),
   }),
