@@ -1,0 +1,48 @@
+---
+// 50/50 "service area" band: town list on the left, a Google Maps embed of
+// the business address on the right. Currently used only on the Landscape
+// Design page (see [service].astro), not a site-wide section.
+import { site } from "../config/site";
+
+const areas = [
+  "Charleston",
+  "North Charleston",
+  "West Ashley",
+  "Summerville",
+  "Mount Pleasant",
+  "Goose Creek",
+  "Daniel Island",
+  "Folly Beach",
+  "James Island",
+  "Isle of Palms",
+];
+
+const addressQuery = `${site.address.street}, ${site.address.city}, ${site.address.state} ${site.address.zip}`;
+const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(addressQuery)}&output=embed`;
+---
+<section class="bg-cream">
+  <div class="container-tt grid items-center gap-12 py-20 lg:grid-cols-2">
+    <div>
+      <h2 class="font-display text-2xl font-semibold text-oak sm:text-3xl">Our Service Area</h2>
+      <ul class="mt-6 grid grid-cols-2 gap-x-6 gap-y-3">
+        {areas.map((area) => (
+          <li class="flex items-start gap-2.5">
+            <span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-turf text-cream">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4.2 4.2L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="text-loam">{area}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="overflow-hidden rounded-2xl border border-line">
+      <iframe
+        src={mapSrc}
+        title={`${site.name} location map`}
+        class="aspect-[4/3] w-full"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
